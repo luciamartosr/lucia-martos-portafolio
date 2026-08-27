@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { User, Clock, CheckCircle2 } from "lucide-react";
+import { User, Clock, CheckCircle2, ArrowUpRight } from "lucide-react";
 import { SiteHeader } from "@/components/layout/site-header";
 import { Footer } from "@/components/sections/footer";
 import { CaseHero } from "@/components/case-study/case-hero";
 import { CaseSection } from "@/components/case-study/case-section";
 import { KeyDecision } from "@/components/case-study/key-decision";
 import { ImagePlaceholder } from "@/components/case-study/image-placeholder";
+import { LearnMoreNote } from "@/components/case-study/learn-more-note";
 import { CaseMedia } from "@/components/case-study/case-media";
 import { CaseStatsBand } from "@/components/case-study/case-stats-band";
 import { CaseHook } from "@/components/case-study/case-hook";
 import { BackToTopButton } from "@/components/case-study/back-to-top-button";
+import { LightboxVideo } from "@/components/case-study/lightbox-video";
 
 const ACCENT = "#F5B800";
 const ACCENT_DARK = "#B8860B";
@@ -167,7 +169,11 @@ export default function ShortcatCaseStudy() {
             product decision, not an interface one.
           </KeyDecision>
 
-          <ImagePlaceholder label="Group purchase and reverse auction screens" />
+          <LearnMoreNote accentColor={ACCENT}>
+            Want to see how these flows look in detail? I&apos;m happy to
+            walk through the group purchase and reverse auction screens in
+            an interview — let&apos;s talk.
+          </LearnMoreNote>
 
           <h3
             className="mt-4 font-display text-2xl font-semibold"
@@ -190,7 +196,10 @@ export default function ShortcatCaseStudy() {
             moment.
           </KeyDecision>
 
-          <ImagePlaceholder label="Projects module and cost dashboard screens" />
+          <LightboxVideo
+            src="/images/shortcat-projects-cost-management.mp4"
+            caption="Projects module and cost dashboard."
+          />
 
           <h3
             className="mt-4 font-display text-2xl font-semibold"
@@ -236,6 +245,20 @@ export default function ShortcatCaseStudy() {
           <p className="font-display text-xl font-semibold text-ink">
             A product doesn&apos;t end when it ships. It ends when it works
             well for whoever uses it.
+          </p>
+          <p>
+            You can explore the live product at{" "}
+            <a
+              href="https://clientes.shortcat.ai/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 font-display font-semibold underline underline-offset-4"
+              style={{ color: ACCENT_DARK }}
+            >
+              clientes.shortcat.ai
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+            .
           </p>
         </CaseSection>
 
