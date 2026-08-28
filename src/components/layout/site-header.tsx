@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "./nav-link";
+import { NavResumeLink } from "./nav-resume-link";
 
 const NAV_ITEMS = [
   { href: "/#about", label: "About me" },
@@ -14,42 +15,8 @@ const NAV_ITEMS = [
   { href: "/#contact", label: "Contact" },
 ];
 
-function useVisitedSections() {
-  const [visited, setVisited] = useState<Set<string>>(new Set());
-
-  useEffect(() => {
-    const ids = NAV_ITEMS.map((item) => item.href.replace("/#", ""));
-    const sections = ids
-      .map((id) => document.getElementById(id))
-      .filter((el): el is HTMLElement => !!el);
-
-    if (sections.length === 0) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          setVisited((prev) => {
-            if (prev.has(entry.target.id)) return prev;
-            const next = new Set(prev);
-            next.add(entry.target.id);
-            return next;
-          });
-        });
-      },
-      { rootMargin: "-40% 0px -50% 0px", threshold: 0 },
-    );
-
-    sections.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
-  return visited;
-}
-
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const visitedSections = useVisitedSections();
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -66,13 +33,9 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-10 lg:flex">
           {NAV_ITEMS.map((item) => (
-            <NavLink
-              key={item.href}
-              href={item.href}
-              label={item.label}
-              isActive={visitedSections.has(item.href.replace("/#", ""))}
-            />
+            <NavLink key={item.href} href={item.href} label={item.label} />
           ))}
+          <NavResumeLink />
         </nav>
 
         <button
@@ -100,11 +63,14 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 label={item.label}
-                isActive={visitedSections.has(item.href.replace("/#", ""))}
                 className="text-lg"
                 onClick={() => setOpen(false)}
               />
             ))}
+            <NavResumeLink
+              className="w-fit"
+              onClick={() => setOpen(false)}
+            />
           </motion.div>
         )}
       </AnimatePresence>

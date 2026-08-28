@@ -60,9 +60,9 @@ export function Footer() {
 
           <div className="flex flex-col gap-5 lg:items-start">
             <h2 className="font-display text-3xl leading-[1.1] text-cream md:text-4xl">
-              Let&apos;s talk about
+              Let&apos;s build something
               <br />
-              <span className="text-pink">your product</span>
+              <span className="text-pink">that works.</span>
             </h2>
 
             <div className="flex flex-wrap items-center gap-4">
