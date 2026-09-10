@@ -251,6 +251,28 @@ export function Projects() {
           <FeaturedProjectCard />
           <SecondaryProjectCard />
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.6, ease: EASE }}
+          className="mt-12 flex flex-col items-center gap-3 text-center"
+        >
+          <p className="font-sans text-lg text-green">
+            Looking for more? A few earlier projects are still on my Behance
+            portfolio — I&apos;m bringing my favorites over here soon.
+          </p>
+          <a
+            href="https://www.behance.net/luciamartos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 font-sans font-semibold text-pink"
+          >
+            View more on Behance
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
