@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
+const REPLAY_RESET_MS = 450;
 
 type TiltTextProps = {
   text: string;
@@ -24,16 +25,26 @@ export function TiltText({
   className,
 }: TiltTextProps) {
   const [hovered, setHovered] = useState(false);
-  const engaged = isActive || hovered;
+  const [replaying, setReplaying] = useState(false);
+  const engaged = (isActive || hovered) && !replaying;
   const firstLetter = text.charAt(0);
   const rest = text.slice(1);
+
+  const handleEngage = () => {
+    setHovered(true);
+    if (!isActive) return;
+    // Already auto-engaged: briefly snap back to rest so the tilt
+    // visibly replays instead of staying static on repeat hovers.
+    setReplaying(true);
+    setTimeout(() => setReplaying(false), REPLAY_RESET_MS);
+  };
 
   return (
     <span
       className={cn("inline-flex", className)}
-      onMouseEnter={() => setHovered(true)}
+      onMouseEnter={handleEngage}
       onMouseLeave={() => setHovered(false)}
-      onFocus={() => setHovered(true)}
+      onFocus={handleEngage}
       onBlur={() => setHovered(false)}
       onTouchStart={() => setHovered((prev) => !prev)}
     >

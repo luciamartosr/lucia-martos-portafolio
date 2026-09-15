@@ -25,12 +25,12 @@ export function Hero() {
       id="hero"
       className="relative overflow-hidden rounded-b-[36px] bg-green md:rounded-b-[56px]"
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-6 pt-28 sm:gap-10 md:px-10 md:pt-32 lg:grid-cols-2 lg:gap-12 lg:px-16 lg:pt-40 lg:pb-28">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-6 pt-28 md:px-10 md:pt-32 lg:grid-cols-2 lg:gap-12 lg:px-16 lg:pt-40 lg:pb-28">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="flex flex-col gap-6 pb-0 sm:pb-16 lg:pb-0"
+          className="flex flex-col gap-6 pb-0 lg:pb-0"
         >
           <p className="flex flex-col gap-1 font-sans text-[13px] font-medium uppercase tracking-[0.2em] text-pink md:flex-row md:items-center md:gap-2">
             <span className="inline-flex items-center gap-2">
@@ -73,7 +73,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.15 }}
-          className="relative -mx-6 mb-0 aspect-[1371/992] w-[calc(100%+3rem)] max-w-none sm:mx-auto sm:w-full sm:max-w-[448px] lg:absolute lg:right-0 lg:top-24 lg:mx-0 lg:mb-0 lg:w-[46%] lg:max-w-none"
+          className="relative -mx-6 mb-0 aspect-[1371/992] w-[calc(100%+3rem)] max-w-none md:-mx-10 md:w-[calc(100%+5rem)] lg:absolute lg:right-0 lg:top-24 lg:mx-0 lg:mb-0 lg:w-[46%] lg:max-w-none"
         >
           <Image
             src="/images/lucia-hero-uxui.png?v=5"

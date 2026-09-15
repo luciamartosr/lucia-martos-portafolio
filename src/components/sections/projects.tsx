@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useInView } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { TiltText } from "@/components/ui/tilt-text";
@@ -9,6 +10,9 @@ import { TiltText } from "@/components/ui/tilt-text";
 const EASE = [0.22, 1, 0.36, 1] as const;
 const HOVER_EASE = "easeOut";
 const TILT_DELAY_MS = 2000;
+const MotionLink = motion.create(Link);
+const CARD_FOCUS_RING =
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink focus-visible:ring-offset-2 focus-visible:ring-offset-cream";
 
 const CARD_ENTRANCE = {
   initial: { opacity: 0, y: 20 },
@@ -36,17 +40,14 @@ function TagRow({ tags, className }: { tags: string[]; className?: string }) {
 }
 
 function CaseStudyLink({
-  href = "#",
   hovered,
   className,
 }: {
-  href?: string;
   hovered: boolean;
   className?: string;
 }) {
   return (
-    <a
-      href={href}
+    <span
       className={`inline-flex w-fit items-center gap-1 font-sans font-semibold text-pink ${className ?? ""}`}
     >
       Read case study
@@ -57,7 +58,7 @@ function CaseStudyLink({
       >
         <ArrowUpRight className="h-4 w-4" />
       </motion.span>
-    </a>
+    </span>
   );
 }
 
@@ -65,12 +66,15 @@ function FeaturedProjectCard() {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <motion.div
+    <MotionLink
+      href="/projects/shortcat"
       {...CARD_ENTRANCE}
       transition={{ duration: 0.55, ease: HOVER_EASE }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="relative flex min-h-[520px] flex-col justify-between overflow-hidden rounded-[36px] bg-green-dark p-8 md:min-h-[620px] md:p-10"
+      onFocus={() => setHovered(true)}
+      onBlur={() => setHovered(false)}
+      className={`relative flex min-h-[520px] flex-col justify-between overflow-hidden rounded-[36px] bg-green-dark p-8 md:min-h-[620px] md:p-10 ${CARD_FOCUS_RING}`}
     >
       <motion.div
         className="absolute inset-0"
@@ -129,9 +133,9 @@ function FeaturedProjectCard() {
           </motion.p>
         </div>
 
-        <CaseStudyLink href="/projects/shortcat" hovered={hovered} />
+        <CaseStudyLink hovered={hovered} />
       </div>
-    </motion.div>
+    </MotionLink>
   );
 }
 
@@ -139,12 +143,15 @@ function SecondaryProjectCard() {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <motion.div
+    <MotionLink
+      href="/projects/jobmatch"
       {...CARD_ENTRANCE}
       transition={{ duration: 0.55, ease: HOVER_EASE, delay: 0.1 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="flex flex-col overflow-hidden rounded-[36px] bg-white"
+      onFocus={() => setHovered(true)}
+      onBlur={() => setHovered(false)}
+      className={`flex flex-col overflow-hidden rounded-[36px] bg-white ${CARD_FOCUS_RING}`}
     >
       <div className="relative h-[260px] overflow-hidden md:h-[320px]">
         <motion.div
@@ -203,13 +210,9 @@ function SecondaryProjectCard() {
           </motion.p>
         </div>
 
-        <CaseStudyLink
-          href="/projects/jobmatch"
-          hovered={hovered}
-          className="mt-auto"
-        />
+        <CaseStudyLink hovered={hovered} className="mt-auto" />
       </div>
-    </motion.div>
+    </MotionLink>
   );
 }
 
