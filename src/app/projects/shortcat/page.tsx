@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { User, Clock, CheckCircle2, ArrowUpRight } from "lucide-react";
 import { SiteHeader } from "@/components/layout/site-header";
 import { Footer } from "@/components/sections/footer";
@@ -8,7 +7,7 @@ import { CaseSection } from "@/components/case-study/case-section";
 import { KeyDecision } from "@/components/case-study/key-decision";
 import { ImagePlaceholder } from "@/components/case-study/image-placeholder";
 import { LearnMoreNote } from "@/components/case-study/learn-more-note";
-import { CaseMedia } from "@/components/case-study/case-media";
+import { LightboxImage } from "@/components/case-study/lightbox-image";
 import { CaseStatsBand } from "@/components/case-study/case-stats-band";
 import { CaseHook } from "@/components/case-study/case-hook";
 import { BackToTopButton } from "@/components/case-study/back-to-top-button";
@@ -84,16 +83,13 @@ export default function ShortcatCaseStudy() {
         </CaseSection>
 
         <CaseSection title="What I designed" accentColor={ACCENT}>
-          <div className="overflow-hidden rounded-2xl border border-ink/10 bg-white">
-            <Image
-              src="/images/shortcat-ecosystem-map.png"
-              alt="Shortcat product ecosystem — six interconnected systems"
-              width={1600}
-              height={1421}
-              className="h-auto w-full"
-              sizes="(min-width: 1024px) 813px, 100vw"
-            />
-          </div>
+          <LightboxImage
+            src="/images/shortcat-ecosystem-map.png"
+            alt="Shortcat product ecosystem — six interconnected systems"
+            caption="Product ecosystem — six interconnected systems"
+            width={1600}
+            height={1421}
+          />
 
           <p>
             I built an ERP with six interconnected systems covering the full
@@ -140,10 +136,12 @@ export default function ShortcatCaseStudy() {
             supplier.
           </p>
 
-          <CaseMedia
+          <LightboxImage
             src="/images/shortcat-comparison-table.gif"
             alt="Shortcat comparison table and award flow"
             caption="Comparison table and award"
+            width={1920}
+            height={1080}
           />
 
           <h3
