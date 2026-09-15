@@ -20,7 +20,7 @@ export function SiteHeader() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-8 md:px-10 lg:px-16">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10 lg:px-16 lg:py-8">
         <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo-blanco.svg"
