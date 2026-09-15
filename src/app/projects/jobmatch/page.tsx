@@ -67,18 +67,12 @@ export default function JobMatchCaseStudy() {
           <CaseStatsBand stats={STATS} iconColor={PRIMARY} />
         </section>
 
-        <section className="px-6 pb-24 pt-6 md:px-10 md:pb-32 md:pt-10 lg:px-16">
+        <section className="px-6 pb-12 pt-6 md:px-10 md:pb-32 md:pt-10 lg:px-16">
           <CaseHook>
             &ldquo;What if finding a job were as easy as swiping on Tinder?
             That&apos;s Jobmatch — and this is how I designed it.&rdquo;
           </CaseHook>
         </section>
-
-        <CaseDisclaimer accentColor={PRIMARY}>
-          This case study reflects the product and flows designed during my
-          involvement in the project. Some interfaces and user flows may have
-          evolved or been modified during development after my participation.
-        </CaseDisclaimer>
 
         <CaseSection title="The challenge" accentColor={PRIMARY}>
           <p>
@@ -97,6 +91,13 @@ export default function JobMatchCaseStudy() {
             designing a single ecosystem that served all three without
             adding complexity or sacrificing anyone&apos;s experience.
           </p>
+
+          <CaseDisclaimer accentColor={PRIMARY}>
+            This case study reflects the product and flows designed during my
+            involvement in the project. Some interfaces and user flows may
+            have evolved or been modified during development after my
+            participation.
+          </CaseDisclaimer>
         </CaseSection>
 
         <CaseSection title="The value proposition" accentColor={PRIMARY}>

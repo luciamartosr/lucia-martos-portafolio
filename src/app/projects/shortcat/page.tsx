@@ -48,7 +48,7 @@ export default function ShortcatCaseStudy() {
           <CaseStatsBand stats={STATS} iconColor={ACCENT_DARK} />
         </section>
 
-        <section className="px-6 pb-24 pt-6 md:px-10 md:pb-32 md:pt-10 lg:px-16">
+        <section className="px-6 pb-12 pt-6 md:px-10 md:pb-32 md:pt-10 lg:px-16">
           <CaseHook>
             &ldquo;An initial brief, incomplete documentation, and workflows
             that kept changing throughout execution. This is the product I
@@ -68,34 +68,39 @@ export default function ShortcatCaseStudy() {
             process, but by reimagining it: turning individual purchasing
             decisions into collective purchasing power.
           </p>
-          <p>
-            I joined as lead designer with a high-level vision already
-            documented. The flows needed adjustments from day one — and kept
-            evolving throughout the entire design process. My role wasn&apos;t
-            just to design screens — it was to facilitate the conversations
-            that turned business ideas into documented flows, and documented
-            flows into a real product.
-          </p>
+          <div
+            className="rounded-2xl border-l-4 bg-ink/5 px-6 py-5"
+            style={{ borderColor: ACCENT }}
+          >
+            <p>
+              I joined as lead designer with a high-level vision already
+              documented. The flows needed adjustments from day one — and
+              kept evolving throughout the entire design process. My role
+              wasn&apos;t just to design screens — it was to facilitate the
+              conversations that turned business ideas into documented
+              flows, and documented flows into a real product.
+            </p>
+          </div>
         </CaseSection>
 
         <CaseSection title="What I designed" accentColor={ACCENT}>
+          <div className="overflow-hidden rounded-2xl border border-ink/10 bg-white">
+            <Image
+              src="/images/shortcat-ecosystem-map.png"
+              alt="Shortcat product ecosystem — six interconnected systems"
+              width={1600}
+              height={1421}
+              className="h-auto w-full"
+              sizes="(min-width: 1024px) 813px, 100vw"
+            />
+          </div>
+
           <p>
             I built an ERP with six interconnected systems covering the full
             procurement management cycle, focused primarily on the
             construction sector — with an architecture designed to expand
             into other sectors in the future.
           </p>
-
-          <div className="overflow-hidden rounded-2xl border border-ink/10 bg-white">
-            <Image
-              src="/images/shortcat-ecosystem-map.png"
-              alt="Shortcat product ecosystem — six interconnected systems"
-              width={1600}
-              height={1840}
-              className="h-auto w-full"
-              sizes="(min-width: 1024px) 813px, 100vw"
-            />
-          </div>
 
           <h3
             className="mt-4 font-display text-2xl font-semibold"
@@ -199,6 +204,7 @@ export default function ShortcatCaseStudy() {
           <LightboxVideo
             src="/images/shortcat-projects-cost-management.mp4"
             caption="Projects module and cost dashboard."
+            autoPlayOnView
           />
 
           <h3

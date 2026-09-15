@@ -16,7 +16,7 @@ export function BackToTopButton({
 
   return (
     <section
-      className={`px-6 py-16 md:px-10 md:py-20 lg:px-16 ${className ?? ""}`}
+      className={`px-6 py-8 md:px-10 md:py-20 lg:px-16 ${className ?? ""}`}
     >
       <FadeUp className="mx-auto flex max-w-7xl justify-end">
         <button
