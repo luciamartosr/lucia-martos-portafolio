@@ -66,7 +66,7 @@ export function LightboxVideo({
 
   return (
     <figure className="flex flex-col gap-3">
-      <div className="group relative overflow-hidden rounded-2xl border border-ink/10 bg-white">
+      <div className="group relative aspect-video overflow-hidden rounded-2xl border border-ink/10 bg-white">
         <video
           ref={inlineVideoRef}
           src={src}
@@ -76,7 +76,7 @@ export function LightboxVideo({
           playsInline
           onPlay={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
-          className="h-auto w-full"
+          className="h-full w-full object-cover"
         />
 
         {!autoPlayOnView && (

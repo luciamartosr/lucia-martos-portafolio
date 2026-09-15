@@ -28,6 +28,33 @@ const STATS = [
   { icon: CheckCircle2, label: "Status", value: "In production" },
 ];
 
+const LESSONS = [
+  {
+    number: "01",
+    title: "Start with the core",
+    description:
+      "Defining core flows early helped us prioritize the essential experience and avoid unnecessary scope.",
+  },
+  {
+    number: "02",
+    title: "Design decisions need a voice",
+    description:
+      "I learned to clearly articulate and defend design decisions while balancing user needs, business priorities, and technical constraints.",
+  },
+  {
+    number: "03",
+    title: "Domain expertise changes the design",
+    description:
+      "Working with a recruitment specialist, combined with my own experience on both sides of the hiring process, helped me design from real understanding rather than assumptions.",
+  },
+  {
+    number: "04",
+    title: "Collaboration accelerates decisions",
+    description:
+      "Working directly with the business owner and developer through design critiques allowed us to resolve questions quickly and keep the product moving.",
+  },
+];
+
 function ProfileItem({
   label,
   children,
@@ -247,7 +274,7 @@ export default function JobMatchCaseStudy() {
             design system, reusable component library, and interaction
             patterns.
           </p>
-          <KeyDecision accentColor={ACCENT}>
+          <KeyDecision accentColor={ACCENT} label="Key design decision:">
             I also participated in visual identity decisions. One of them
             was introducing purple as the accent color — a deliberate
             choice to stand out in a market dominated by blues and greens,
@@ -322,22 +349,35 @@ export default function JobMatchCaseStudy() {
           <LightboxVideo
             src="/images/jobmatch-talent-profile-creation.mp4"
             caption="Talent profile creation flow in the final product."
+            autoPlayOnView
           />
         </CaseSection>
 
         <CaseSection title="What I learned" accentColor={PRIMARY}>
           <p>
-            This project confirmed something that has followed me throughout
-            my career: the best products don&apos;t just come from
-            understanding users. They come from understanding the business
-            behind them at the same time.
+            This project taught me things that still shape the way I work
+            today. Four lessons that stuck with me:
           </p>
-          <p className="font-display text-xl font-semibold text-ink">
-            Having lived the recruiting process from both sides — as a
-            company and as a candidate — allowed me to make design
-            decisions that didn&apos;t depend only on research. They
-            depended on having been there.
-          </p>
+
+          <div className="flex flex-col">
+            {LESSONS.map((lesson) => (
+              <div
+                key={lesson.number}
+                className="border-b border-ink/10 py-5 first:pt-0 last:border-b-0 last:pb-0"
+              >
+                <p
+                  className="font-sans text-sm font-semibold"
+                  style={{ color: PRIMARY }}
+                >
+                  {lesson.number}
+                </p>
+                <h3 className="mt-1 font-display text-xl font-semibold text-ink">
+                  {lesson.title}
+                </h3>
+                <p className="mt-1 text-ink-soft">{lesson.description}</p>
+              </div>
+            ))}
+          </div>
         </CaseSection>
 
         <BackToTopButton accentColor={PRIMARY} />

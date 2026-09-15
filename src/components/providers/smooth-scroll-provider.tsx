@@ -21,7 +21,18 @@ export function SmoothScrollProvider({
     }
     frameId = requestAnimationFrame(raf);
 
+    // Images and videos that finish loading after Lenis measures the
+    // page can grow the document without Lenis noticing, capping wheel
+    // scroll short of the real bottom (the native scrollbar still
+    // works since it bypasses Lenis). Keep Lenis in sync with any
+    // layout change.
+    const resizeObserver = new ResizeObserver(() => {
+      lenis.resize();
+    });
+    resizeObserver.observe(document.body);
+
     return () => {
+      resizeObserver.disconnect();
       cancelAnimationFrame(frameId);
       lenis.destroy();
     };

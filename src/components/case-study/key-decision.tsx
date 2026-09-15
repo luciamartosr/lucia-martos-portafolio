@@ -1,9 +1,11 @@
 export function KeyDecision({
   children,
   accentColor,
+  label = "Key product decision:",
 }: {
   children: React.ReactNode;
   accentColor: string;
+  label?: string;
 }) {
   return (
     <div
@@ -12,7 +14,7 @@ export function KeyDecision({
     >
       <p>
         <span className="font-display font-semibold" style={{ color: accentColor }}>
-          Key product decision:
+          {label}
         </span>{" "}
         {children}
       </p>
