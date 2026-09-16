@@ -47,7 +47,7 @@ export default function ShortcatCaseStudy() {
           <CaseStatsBand stats={STATS} iconColor={ACCENT_DARK} />
         </section>
 
-        <section className="px-6 pb-12 pt-6 md:px-10 md:pb-32 md:pt-10 lg:px-16">
+        <section className="px-6 pb-6 pt-6 md:px-10 md:pb-[104px] md:pt-10 lg:px-16">
           <CaseHook>
             &ldquo;An initial brief, incomplete documentation, and workflows
             that kept changing throughout execution. This is the product I
