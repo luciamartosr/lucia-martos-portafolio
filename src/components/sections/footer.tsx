@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { Mail } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button";
@@ -12,10 +13,11 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const EMAIL = "lua.martosr@gmail.com";
 
 const FOOTER_LINKS = [
-  { href: "#about", label: "About me" },
-  { href: "#how-can-i-help", label: "How can I help" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/#about", label: "About me" },
+  { href: "/#how-can-i-help", label: "How can I help" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Footer() {
@@ -42,12 +44,14 @@ export function Footer() {
           className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16"
         >
           <div className="flex flex-col gap-6">
-            <Image
-              src="/images/logo-blanco.svg"
-              alt="Lucía Martos"
-              width={92}
-              height={43}
-            />
+            <Link href="/" className="w-fit">
+              <Image
+                src="/images/logo-blanco.svg"
+                alt="Lucía Martos"
+                width={92}
+                height={43}
+              />
+            </Link>
             <div className="flex flex-col gap-1 font-sans text-cream/60">
               <p className="flex items-center gap-2">
                 UX/UI Designer
@@ -69,7 +73,7 @@ export function Footer() {
               <div className="relative">
                 <ButtonLink
                   href={`mailto:${EMAIL}`}
-                  variant="primary"
+                  variant="secondary"
                   className="gap-2"
                   onClick={handleEmailClick}
                 >
@@ -92,7 +96,7 @@ export function Footer() {
               </div>
               <ButtonLink
                 href="https://wa.me/"
-                variant="secondary"
+                variant="primary"
                 className="gap-2"
               >
                 Whatsapp me

@@ -9,6 +9,7 @@ import { NavLink } from "./nav-link";
 import { NavResumeLink } from "./nav-resume-link";
 
 const NAV_ITEMS = [
+  { href: "/", label: "Home" },
   { href: "/#about", label: "About me" },
   { href: "/#how-can-i-help", label: "How can I help" },
   { href: "/#projects", label: "Projects" },
