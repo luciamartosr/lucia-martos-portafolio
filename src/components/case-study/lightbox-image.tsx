@@ -40,6 +40,15 @@ export function LightboxImage({
   );
   const lastTapRef = useRef(0);
 
+  // Kept in sync with state on every render so the native (non-passive)
+  // touch listener below can always read the latest value — its own
+  // closure is only recreated when `open` changes, so reading `scale`/
+  // `translate` directly there would see stale values mid-gesture.
+  const scaleRef = useRef(scale);
+  scaleRef.current = scale;
+  const translateRef = useRef(translate);
+  translateRef.current = translate;
+
   const clampScale = (value: number) =>
     Math.min(MAX_SCALE, Math.max(MIN_SCALE, value));
 
@@ -55,7 +64,7 @@ export function LightboxImage({
   };
 
   const toggleZoom = () => {
-    if (scale > MIN_SCALE) {
+    if (scaleRef.current > MIN_SCALE) {
       resetZoom();
     } else {
       applyScale(DOUBLE_TAP_SCALE);
@@ -113,36 +122,18 @@ export function LightboxImage({
       touches[0].clientY - touches[1].clientY,
     );
 
-  const handleTouchStart = (e: React.TouchEvent) => {
-    if (e.touches.length === 2) {
-      pinchRef.current = { startDist: touchDistance(e.touches), startScale: scale };
-    } else if (e.touches.length === 1) {
-      if (scale > MIN_SCALE) {
-        dragRef.current = {
-          startX: e.touches[0].clientX,
-          startY: e.touches[0].clientY,
-          originX: translate.x,
-          originY: translate.y,
-        };
-      } else {
-        const now = Date.now();
-        if (now - lastTapRef.current < DOUBLE_TAP_MS) {
-          toggleZoom();
-        }
-        lastTapRef.current = now;
-      }
-    }
-  };
-
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (e.touches.length < 2) pinchRef.current = null;
     if (e.touches.length < 1) dragRef.current = null;
   };
 
-  // React attaches wheel/touchmove listeners as passive by default, so
-  // preventDefault() inside a synthetic handler is silently ignored (and
-  // logs a warning). Attach these two natively with passive: false so
-  // zoom/pan can actually stop the page from scrolling or pinch-zooming.
+  // React attaches wheel/touchstart/touchmove listeners as passive by
+  // default, so preventDefault() inside a synthetic handler is silently
+  // ignored (and logs a warning). Attach these natively with
+  // passive: false so zoom/pan can actually stop the page from
+  // scrolling or pinch-zooming — and, for touchstart, so the browser's
+  // own double-tap-to-zoom / delayed-click gesture never gets a chance
+  // to fire alongside (and cancel out) our custom double-tap handling.
   useEffect(() => {
     const stage = stageRef.current;
     if (!open || !stage) return;
@@ -154,6 +145,31 @@ export function LightboxImage({
         if (next === MIN_SCALE) setTranslate({ x: 0, y: 0 });
         return next;
       });
+    };
+
+    const onTouchStart = (e: TouchEvent) => {
+      e.preventDefault();
+      if (e.touches.length === 2) {
+        pinchRef.current = {
+          startDist: touchDistance(e.touches),
+          startScale: scaleRef.current,
+        };
+      } else if (e.touches.length === 1) {
+        if (scaleRef.current > MIN_SCALE) {
+          dragRef.current = {
+            startX: e.touches[0].clientX,
+            startY: e.touches[0].clientY,
+            originX: translateRef.current.x,
+            originY: translateRef.current.y,
+          };
+        } else {
+          const now = Date.now();
+          if (now - lastTapRef.current < DOUBLE_TAP_MS) {
+            toggleZoom();
+          }
+          lastTapRef.current = now;
+        }
+      }
     };
 
     const onTouchMove = (e: TouchEvent) => {
@@ -171,10 +187,12 @@ export function LightboxImage({
     };
 
     stage.addEventListener("wheel", onWheel, { passive: false });
+    stage.addEventListener("touchstart", onTouchStart, { passive: false });
     stage.addEventListener("touchmove", onTouchMove, { passive: false });
 
     return () => {
       stage.removeEventListener("wheel", onWheel);
+      stage.removeEventListener("touchstart", onTouchStart);
       stage.removeEventListener("touchmove", onTouchMove);
     };
   }, [open]);
@@ -282,7 +300,6 @@ export function LightboxImage({
               onPointerUp={stopDrag}
               onPointerCancel={stopDrag}
               onDoubleClick={toggleZoom}
-              onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
             >
               <Image
