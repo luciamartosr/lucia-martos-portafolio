@@ -154,20 +154,24 @@ export function LightboxImage({
           startDist: touchDistance(e.touches),
           startScale: scaleRef.current,
         };
+        dragRef.current = null;
       } else if (e.touches.length === 1) {
-        if (scaleRef.current > MIN_SCALE) {
+        // Double-tap must be checked regardless of current zoom level —
+        // it's the gesture used both to zoom in and to zoom back out.
+        const now = Date.now();
+        const isDoubleTap = now - lastTapRef.current < DOUBLE_TAP_MS;
+        lastTapRef.current = now;
+
+        if (isDoubleTap) {
+          toggleZoom();
+          dragRef.current = null;
+        } else if (scaleRef.current > MIN_SCALE) {
           dragRef.current = {
             startX: e.touches[0].clientX,
             startY: e.touches[0].clientY,
             originX: translateRef.current.x,
             originY: translateRef.current.y,
           };
-        } else {
-          const now = Date.now();
-          if (now - lastTapRef.current < DOUBLE_TAP_MS) {
-            toggleZoom();
-          }
-          lastTapRef.current = now;
         }
       }
     };
@@ -244,7 +248,7 @@ export function LightboxImage({
                   applyScale(scale - ZOOM_STEP);
                 }}
                 disabled={scale <= MIN_SCALE}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20 disabled:opacity-30"
+                className="hidden h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20 disabled:opacity-30 lg:flex"
                 aria-label="Zoom out"
               >
                 <ZoomOut className="h-5 w-5" />
@@ -256,7 +260,7 @@ export function LightboxImage({
                   applyScale(scale + ZOOM_STEP);
                 }}
                 disabled={scale >= MAX_SCALE}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20 disabled:opacity-30"
+                className="hidden h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20 disabled:opacity-30 lg:flex"
                 aria-label="Zoom in"
               >
                 <ZoomIn className="h-5 w-5" />
@@ -268,7 +272,7 @@ export function LightboxImage({
                     e.stopPropagation();
                     resetZoom();
                   }}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20"
+                  className="hidden h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20 lg:flex"
                   aria-label="Reset zoom"
                 >
                   <Maximize2 className="h-4 w-4" />
