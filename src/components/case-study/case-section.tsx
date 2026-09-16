@@ -9,7 +9,7 @@ export function CaseSection({
 }) {
   return (
     <section className="px-6 py-8 md:px-10 md:py-14 lg:px-16">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-[380px_1fr] md:gap-16">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:gap-12 lg:grid-cols-[380px_1fr] lg:gap-16">
         <h2
           className="font-display text-4xl font-bold lg:text-5xl"
           style={{ color: accentColor }}

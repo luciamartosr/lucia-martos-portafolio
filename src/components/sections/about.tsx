@@ -32,7 +32,7 @@ export function About() {
       id="about"
       className="bg-cream px-6 py-24 md:px-10 md:py-28 lg:px-16 lg:py-32"
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-[380px_1fr] md:gap-16">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:gap-12 lg:grid-cols-[380px_1fr] lg:gap-16">
         <motion.h2
           ref={headingRef}
           initial={{ opacity: 0, y: 20 }}

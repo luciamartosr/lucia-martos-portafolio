@@ -62,7 +62,7 @@ export function HowCanIHelp() {
       id="how-can-i-help"
       className="rounded-[36px] bg-green px-6 py-14 md:rounded-[56px] md:px-10 md:py-16 lg:px-16 lg:py-20"
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-[380px_1fr] md:gap-16">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-[380px_1fr] lg:gap-16">
         <motion.h2
           ref={headingRef}
           initial={{ opacity: 0, y: 20 }}
