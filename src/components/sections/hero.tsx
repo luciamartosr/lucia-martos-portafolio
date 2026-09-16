@@ -60,11 +60,11 @@ export function Hero() {
           </p>
 
           <div className="mt-2 flex flex-wrap items-center gap-4">
-            <ButtonLink href="/#projects" variant="primary">
-              See my work
-            </ButtonLink>
             <ButtonLink href="/#contact" variant="secondary">
               Contact me
+            </ButtonLink>
+            <ButtonLink href="/#projects" variant="primary">
+              See my work
             </ButtonLink>
           </div>
         </motion.div>
