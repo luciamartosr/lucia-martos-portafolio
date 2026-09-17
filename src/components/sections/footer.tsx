@@ -69,12 +69,12 @@ export function Footer() {
               <span className="text-pink">that works.</span>
             </h2>
 
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-nowrap items-center gap-3 md:gap-4">
               <div className="relative">
                 <ButtonLink
                   href={`mailto:${EMAIL}`}
                   variant="secondary"
-                  className="gap-2"
+                  className="gap-2 px-5 md:px-7"
                   onClick={handleEmailClick}
                 >
                   E-mail me
@@ -97,7 +97,7 @@ export function Footer() {
               <ButtonLink
                 href="https://wa.me/"
                 variant="primary"
-                className="gap-2"
+                className="gap-2 px-5 md:px-7"
               >
                 Whatsapp me
                 <WhatsappIcon className="h-4 w-4" />
