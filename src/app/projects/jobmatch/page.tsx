@@ -94,7 +94,7 @@ export default function JobMatchCaseStudy() {
           <CaseStatsBand stats={STATS} iconColor={PRIMARY} />
         </section>
 
-        <section className="px-6 pb-6 pt-6 md:px-10 md:pb-[104px] md:pt-10 lg:px-16">
+        <section className="px-6 pb-6 pt-6 md:px-10 md:pb-10 md:pt-10 lg:px-16">
           <CaseHook>
             &ldquo;What if finding a job were as easy as swiping on Tinder?
             That&apos;s Jobmatch — and this is how I designed it.&rdquo;
