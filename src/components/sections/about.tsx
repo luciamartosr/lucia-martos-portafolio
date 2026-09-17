@@ -9,7 +9,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const TILT_DELAY_MS = 2000;
 
 const PARAGRAPHS = [
-  "Hi, I’m Lucía — a UX/UI Designer with a background in business consulting and operations.",
+  "Hi, I’m Lucía — a Peruvian UX/UI Designer based in Colombia, with a background in business consulting and operations.",
   "Before becoming a designer, I spent 13 years helping businesses work better. As a consultant, I worked across industries improving processes, implementing management systems, training teams, and managing operations. I learned what makes a business work — and where things tend to break.",
   "Then I discovered UX/UI design, and everything clicked. I finally had the tools to turn the operational problems I’d been solving for years into digital products. Not just recommending changes in a report, but actually designing the product that makes the change happen.",
   "That’s what I bring to product design: the ability to understand a business beyond the brief. I know how to read its processes, its people, and the friction points that aren’t always obvious at first — and translate that complexity into simple, intuitive experiences.",

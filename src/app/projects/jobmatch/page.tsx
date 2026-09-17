@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { User, Clock, CheckCircle2, ArrowUpRight } from "lucide-react";
+import { User, Clock, CheckCircle2, MapPin, ArrowUpRight } from "lucide-react";
 import { SiteHeader } from "@/components/layout/site-header";
 import { Footer } from "@/components/sections/footer";
 import { CaseHero } from "@/components/case-study/case-hero";
@@ -26,6 +26,7 @@ const STATS = [
   { icon: User, label: "Role", value: "UX/UI Designer" },
   { icon: Clock, label: "Duration", value: "4 months" },
   { icon: CheckCircle2, label: "Status", value: "In production" },
+  { icon: MapPin, label: "Location", value: "Peru" },
 ];
 
 const LESSONS = [

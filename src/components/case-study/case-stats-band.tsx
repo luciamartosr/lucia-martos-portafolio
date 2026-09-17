@@ -15,7 +15,7 @@ export function CaseStatsBand({
   iconColor: string;
 }) {
   return (
-    <div className="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-ink/10 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
+    <div className="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-ink/10 sm:grid-cols-4 sm:divide-y-0 sm:divide-x">
       {stats.map((stat, i) => {
         const Icon = stat.icon;
         return (
