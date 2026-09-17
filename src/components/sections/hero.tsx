@@ -25,7 +25,7 @@ export function Hero() {
       id="hero"
       className="relative overflow-hidden rounded-b-[36px] bg-green md:rounded-b-[56px]"
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-6 pt-28 md:px-10 md:pt-32 lg:grid-cols-2 lg:gap-12 lg:px-16 lg:pb-[78px] lg:pt-[185px]">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-6 pt-28 md:px-10 md:pt-32 lg:grid-cols-2 lg:gap-12 lg:px-16 lg:pb-[78px] lg:pt-[185px]">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
