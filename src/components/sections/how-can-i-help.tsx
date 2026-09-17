@@ -69,7 +69,7 @@ export function HowCanIHelp() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: EASE }}
-          className="font-display text-5xl font-bold leading-[1.05] text-pink lg:text-6xl"
+          className="font-display text-4xl font-bold leading-[1.05] text-pink lg:text-5xl"
         >
           <TiltText
             text="How can I help?"

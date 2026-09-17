@@ -239,7 +239,7 @@ export function Projects() {
         >
           <h2
             ref={headingRef}
-            className="font-display text-6xl font-bold text-pink lg:text-7xl"
+            className="font-display text-4xl font-bold text-pink lg:text-5xl"
           >
             <TiltText
               text="Projects"
