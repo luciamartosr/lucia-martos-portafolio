@@ -13,12 +13,28 @@ export function Hero() {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const isHeadingInView = useInView(headingRef, { once: true, amount: 0.7 });
   const [tiltActive, setTiltActive] = useState(false);
+  const [isLargeDisplay, setIsLargeDisplay] = useState(false);
 
   useEffect(() => {
     if (!isHeadingInView) return;
     const timer = setTimeout(() => setTiltActive(true), TILT_DELAY_MS);
     return () => clearTimeout(timer);
   }, [isHeadingInView]);
+
+  // Browser zoom changes window.innerWidth, so a CSS min-width breakpoint
+  // here would flip on/off depending on each browser's saved zoom level
+  // for this site (e.g. Chrome vs Edge on the same 13" laptop). Reading
+  // the actual screen resolution instead — unaffected by page zoom —
+  // reliably tells apart a genuinely large monitor from a laptop panel
+  // reporting a zoomed-out width.
+  useEffect(() => {
+    const check = () => {
+      setIsLargeDisplay(window.screen.width >= 1600 && window.innerWidth >= 1024);
+    };
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   return (
     <section
@@ -73,7 +89,8 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.15 }}
-          className="relative -mx-6 mb-0 aspect-[1371/992] w-[calc(100%+3rem)] max-w-none md:-mx-10 md:w-[calc(100%+5rem)] lg:absolute lg:right-[calc(8px_-_max(0px,_(100vw_-_1280px)/2))] lg:top-[121px] lg:mx-0 lg:mb-0 lg:w-[46.2%] lg:max-w-none [@media(min-width:1600px)]:top-[96px] [@media(min-width:1600px)]:w-[65%]"
+          className="relative -mx-6 mb-0 aspect-[1371/992] w-[calc(100%+3rem)] max-w-none md:-mx-10 md:w-[calc(100%+5rem)] lg:absolute lg:right-[calc(8px_-_max(0px,_(100vw_-_1280px)/2))] lg:top-[121px] lg:mx-0 lg:mb-0 lg:w-[46.2%] lg:max-w-none"
+          style={isLargeDisplay ? { top: 96, width: "65%" } : undefined}
         >
           <Image
             src="/images/lucia-hero-uxui.png?v=5"
