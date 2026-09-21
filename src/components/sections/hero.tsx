@@ -89,7 +89,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.15 }}
-          className="relative -mx-6 mb-0 aspect-[1371/992] w-[calc(100%+3rem)] max-w-none md:-mx-10 md:w-[calc(100%+5rem)] lg:absolute lg:right-[calc(4px_-_max(0px,_(100vw_-_1280px)/2))] lg:top-[121px] lg:mx-0 lg:mb-0 lg:w-[46.2%] lg:max-w-none"
+          className="relative -mx-6 mb-0 aspect-[1371/992] w-[calc(100%+3rem)] max-w-none md:-mx-10 md:w-[calc(100%+5rem)] lg:absolute lg:right-[calc(0px_-_max(0px,_(100vw_-_1280px)/2))] lg:top-[121px] lg:mx-0 lg:mb-0 lg:w-[46.2%] lg:max-w-none"
           style={
             isLargeDisplay
               ? {
