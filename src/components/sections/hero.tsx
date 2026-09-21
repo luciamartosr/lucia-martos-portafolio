@@ -26,10 +26,13 @@ export function Hero() {
   // for this site (e.g. Chrome vs Edge on the same 13" laptop). Reading
   // the actual screen resolution instead — unaffected by page zoom —
   // reliably tells apart a genuinely large monitor from a laptop panel
-  // reporting a zoomed-out width.
+  // reporting a zoomed-out width. Both checks require 1600px: screen
+  // width alone isn't enough, since a large monitor with a narrower
+  // (unmaximized) browser window still needs the smaller layout to
+  // avoid the enlarged image overlapping the text column.
   useEffect(() => {
     const check = () => {
-      setIsLargeDisplay(window.screen.width >= 1600 && window.innerWidth >= 1024);
+      setIsLargeDisplay(window.screen.width >= 1600 && window.innerWidth >= 1600);
     };
     check();
     window.addEventListener("resize", check);
