@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "title": "Lucía Martos — UX/UI Designer & Business Consultant",
+    "description": "14 years consulting companies across industries. Now I apply that to UX/UI design — so your product works not just for users, but for the operation behind it."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "howCanIHelp": "How can I help",
+    "projects": "Projects",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "resume": "Resume",
+    "languageLabel": "Language"
+  },
+  "hero": {
+    "eyebrowRole": "UX UI DESIGNER",
+    "eyebrowConsultant": "BUSINESS CONSULTANT",
+    "heading": "I'm Lucía Martos",
+    "paragraph": "14 years consulting across industries. Now I apply that to UX/UI design — so your product works for users and the operation behind it.",
+    "ctaContact": "Contact me",
+    "ctaProjects": "See my work",
+    "imageAlt": "Lucía Martos sitting next to 3D UX/UI letters"
+  },
+  "about": {
+    "heading": "About me",
+    "downloadResume": "Download my resume",
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "shortParagraph": "Before I ever opened Figma, I was already doing what product designers do — talking to real people, understanding their problems, and iterating fast. I just didn't know it had a name yet. I'm a Fulbright Scholar with a Master's in Science of Entrepreneurship from the University of Florida, 14 years as a business consultant, and 4 years designing digital products. I advise early-stage startups, I've won design thinking programs sponsored by IDEO, and I build products that work as well on the inside as they look on the outside.",
+    "expandedParagraphs": [
+      "Before I ever opened Figma, I was already doing what product designers do — going out to talk to real people, understanding their problems, and coming back to iterate. I just didn't know it had a name yet.",
+      "I'm a Peruvian UX/UI Designer based in Colombia. I studied business administration and went on to become a Fulbright Scholar, completing a Master of Science in Entrepreneurship at the University of Florida. There I participated in Startup Gainesville — a 48-hour startup program where my team pitched and won — and in an IDEO-sponsored design thinking program where my team solved a real challenge for a nonprofit. Both experiences shaped how I think about problems: from the user out, not from the solution in.",
+      "For over 14 years I worked as a business consultant across industries — implementing quality systems, optimizing processes, training teams. Since 2023 I've been advising early-stage entrepreneurs at Cajamarca Incuba, the business incubator of the Chamber of Commerce of Cajamarca (Peru), helping them validate ideas, strengthen their value propositions, and apply to startup funds. One of the teams I advised won a Startup Perú grant.",
+      "Four years ago I discovered UX/UI design — and everything clicked. I finally had the tools to build what I'd been helping others imagine for years.",
+      "If you're building a product that needs to work as well on the inside as it looks on the outside, let's talk."
+    ]
+  },
+  "howCanIHelp": {
+    "heading": "How can I help?",
+    "services": [
+      {
+        "number": "01",
+        "title": "User experience design",
+        "description": "I map your users, your processes, and the friction points between them — then design flows that make sense for both sides."
+      },
+      {
+        "number": "02",
+        "title": "Information architecture",
+        "description": "I structure complex products so users always know where they are and what to do next. Especially useful for platforms with multiple roles and workflows"
+      },
+      {
+        "number": "03",
+        "title": "Interactive prototyping",
+        "description": "From low fidelity to high fidelity — prototypes built to test assumptions early and communicate decisions clearly to your team."
+      },
+      {
+        "number": "04",
+        "title": "Usability testing",
+        "description": "I design and run tests with real users to validate what works and surface what doesn't before development starts."
+      },
+      {
+        "number": "05",
+        "title": "UX Audit",
+        "description": "A thorough review of your existing product to identify usability issues, flow gaps, and opportunities to improve the experience."
+      },
+      {
+        "number": "06",
+        "title": "Product & design documentation",
+        "description": "Clear annotations, flow documentation, and design rules so your development team always knows the intention behind your screens."
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "featuredEyebrow": "FEATURED PROJECT",
+    "featured": {
+      "imageAlt": "Shortcat — construction industry ERP platform",
+      "title": "Construction Industry ERP Platform",
+      "name": "Shortcat",
+      "tags": ["Complex Workflows", "UX/UI Design", "Design System"],
+      "hoverDescription": "Designed an ERP that simplifies complex construction operations."
+    },
+    "secondary": {
+      "imageAlt": "JobMatch project",
+      "title": "Recruitment Platform",
+      "name": "JobMatch",
+      "tags": ["Product Strategy", "UX Research", "UX/UI Design"],
+      "hoverDescription": "Connecting companies, recruiters and talent through one seamless experience."
+    },
+    "readCaseStudy": "Read case study",
+    "moreProjectsText": "Looking for more? A few earlier projects are still on my Behance portfolio — I'm bringing my favorites over here soon.",
+    "viewMoreOnBehance": "View more on Behance"
+  },
+  "footer": {
+    "logoAlt": "Lucía Martos",
+    "role": "UX/UI Designer",
+    "consultant": "Business consultant",
+    "basedIn": "Based in Colombia, working globally.",
+    "headingLine1": "Let's build something",
+    "headingLine2": "that works.",
+    "emailMe": "E-mail me",
+    "emailCopied": "Email copied to clipboard",
+    "whatsappMe": "Whatsapp me",
+    "links": {
+      "home": "Home",
+      "about": "About me",
+      "howCanIHelp": "How can I help",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "copyright": "© {year} Lucía Martos. All rights reserved"
+  },
+  "caseStudyShared": {
+    "backToProjects": "Back to projects",
+    "backToTop": "Back to top",
+    "keyDecisionDefaultLabel": "Key product decision:",
+    "disclaimerHeading": "A note on the case study",
+    "viewInFullScreen": "View {alt} in full screen",
+    "viewFullScreen": "View full screen",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetZoom": "Reset zoom",
+    "closeFullScreenImage": "Close full screen image",
+    "playVideo": "Play video",
+    "pauseVideo": "Pause video",
+    "viewVideoFullScreen": "View video in full screen",
+    "closeFullScreenVideo": "Close full screen video"
+  },
+  "caseStudyShortcat": {
+    "meta": {
+      "title": "Shortcat — Case Study | Lucía Martos",
+      "description": "ERP for procurement management in the construction sector. A case study by Lucía Martos, Lead Product Designer."
+    },
+    "hero": {
+      "eyebrow": "Case study",
+      "title": "Shortcat",
+      "tagline": "ERP for procurement management in the construction sector.",
+      "tags": ["Complex Workflows", "UX/UI Design", "Design System"],
+      "imageAlt": "Shortcat — construction industry ERP platform"
+    },
+    "stats": [
+      { "label": "Role", "value": "Lead Product Designer" },
+      { "label": "Duration", "value": "13 months" },
+      { "label": "Status", "value": "In production" },
+      { "label": "Location", "value": "Peru" }
+    ],
+    "hook": "An initial brief, incomplete documentation, and workflows that kept changing throughout execution. This is the product I led for 13 months — and that is now in production.",
+    "context": {
+      "title": "The context",
+      "p1": "The construction sector runs on procurement. Every project depends on getting the right materials, from the right suppliers, at the right price — and on time. Most companies still manage this with spreadsheets, emails, and WhatsApp.",
+      "p2": "Shortcat was born to change that — not just by digitizing the process, but by reimagining it: turning individual purchasing decisions into collective purchasing power.",
+      "calloutP": "I joined as lead designer with a high-level vision already documented. The flows needed adjustments from day one — and kept evolving throughout the entire design process. My role wasn't just to design screens — it was to facilitate the conversations that turned business ideas into documented flows, and documented flows into a real product."
+    },
+    "whatIDesigned": {
+      "title": "What I designed",
+      "ecosystemImage": {
+        "alt": "Shortcat product ecosystem — six interconnected systems",
+        "caption": "Product ecosystem — six interconnected systems"
+      },
+      "intro": "I built an ERP with six interconnected systems covering the full procurement management cycle, focused primarily on the construction sector — with an architecture designed to expand into other sectors in the future.",
+      "coreFlow": {
+        "heading": "Core procurement flow",
+        "p1": "From requirement creation to closing with two-way evaluation. The flow supports configurable conditional approvals — because Shortcat serves both companies where the general manager approves alone, and companies with multiple hierarchical levels.",
+        "p2": "The most complex component was the comparison table — a grid where the buyer evaluates quotes from multiple suppliers per item and awards them granularly. Before designing a single screen, I met with logistics and procurement users from different companies to understand how they actually evaluate quotes in practice: which criteria matter most, in what order they decide, and how they think when ten suppliers are quoting on ten items each.",
+        "keyDecision": "Visually show which is the best proposal per item without forcing the choice — because in real procurement, price isn't always the only criterion. That decision came from understanding the business logic, not from a spec.",
+        "p3": "The flow closes with Shortcat Drive — document management by purchase order directly in the platform, eliminating email chaos — and a two-way evaluation where buyers and suppliers rate each other. I included the buyer's rating because in construction, knowing whether a client pays late or changes terms at the last minute is just as valuable as evaluating a supplier."
+      },
+      "comparisonImage": {
+        "alt": "Shortcat comparison table and award flow",
+        "caption": "Comparison table and award"
+      },
+      "collaborative": {
+        "heading": "Collaborative purchasing — the biggest differentiator",
+        "p1": "Group purchase: multiple companies pool volume to negotiate better prices together.",
+        "p2": "Reverse auction: Shortcat identifies the most in-demand products across the platform and launches an auction where the price drops as more buyers join.",
+        "p3": "Both features had earlier screens built on incomplete business logic. I rebuilt them from the logic up, through multiple sessions with the client.",
+        "keyDecision": "In group purchase, defining how much visibility each company has into the others. Too much information broke trust between competitors; too little made it impossible to coordinate the purchase. Finding that balance took several iterations and was a product decision, not an interface one."
+      },
+      "learnMore": "Want to see how these flows look in detail? I'm happy to walk through the group purchase and reverse auction screens in an interview — let's talk.",
+      "projectsCost": {
+        "heading": "Projects and cost management",
+        "p1": "What started as a \"cost center\" field inside Settings evolved into a full module: budgets by line item and sub-item, change order management, cost tracking linked to each line item, and a real-time execution dashboard.",
+        "keyDecision": "Separating \"Projects\" from \"Cost management\" into two distinct sections instead of one. Projects is where you define and plan — costs is where you control and execute. Merging them into a single screen created confusion about what action the user was taking at any given moment.",
+        "videoCaption": "Projects module and cost dashboard."
+      },
+      "additionalModules": {
+        "heading": "Additional modules designed",
+        "p1": "Three modules designed and queued for development: a redesigned requirements marketplace, Shortcat Academy (tutorial videos and downloadable templates with an admin panel), and premium subscription plans with webhook-based activation logic and a subscriber management panel."
+      }
+    },
+    "whyDifferent": {
+      "title": "Why this project is different",
+      "p1": "I didn't execute briefs — I helped write them. The most complex flows had no clear spec. I facilitated the sessions, mapped the stakeholders, defined the logic, and only then designed.",
+      "p2": "My 14 years as a business consultant let me read the operational logic behind every requirement before opening Figma. That's why I could design a two-way evaluation, a reverse auction, or a line-item budget control system — not because it was handed to me in a document, but because I understand how these things actually work inside real companies."
+    },
+    "whatILearned": {
+      "title": "What I learned",
+      "p1": "Moving forward without validating with real users isn't progress — it's assumption. The post-launch friction in the core flow confirmed what I had flagged early on. That experience shaped how I approach product decisions now: defend the user with arguments, document the reasoning, and push for early validation even under startup pressure.",
+      "highlight": "A product doesn't end when it ships. It ends when it works well for whoever uses it.",
+      "liveProductPrefix": "You can explore the live product at",
+      "liveProductLabel": "clientes.shortcat.ai"
+    }
+  },
+  "caseStudyJobmatch": {
+    "meta": {
+      "title": "JobMatch — Case Study | Lucía Martos",
+      "description": "Designing an employment platform for three user types — without turning it into three different products. A case study by Lucía Martos, UX/UI Designer."
+    },
+    "hero": {
+      "eyebrow": "Case study",
+      "title": "JobMatch",
+      "tagline": "Designing an employment platform for three user types — without turning it into three different products.",
+      "tags": ["Product Strategy", "UX Research", "UX/UI Design"],
+      "imageAlt": "JobMatch — employment platform"
+    },
+    "stats": [
+      { "label": "Role", "value": "UX/UI Designer" },
+      { "label": "Duration", "value": "4 months" },
+      { "label": "Status", "value": "In production" },
+      { "label": "Location", "value": "Peru" }
+    ],
+    "hook": "What if finding a job were as easy as swiping on Tinder? That's Jobmatch — and this is how I designed it.",
+    "challenge": {
+      "title": "The challenge",
+      "p1": "Finding talent is still a complex process for everyone involved — and there are more than two sides to it.",
+      "p2": "Jobmatch was built to connect three profiles with different needs: companies looking to optimize their hiring process, candidates seeking faster and more transparent opportunities, and independent recruiters managing multiple processes at the same time.",
+      "p3": "The real challenge wasn't designing a job platform — it was designing a single ecosystem that served all three without adding complexity or sacrificing anyone's experience.",
+      "disclaimer": "This case study reflects the product and flows designed during my involvement in the project. Some interfaces and user flows may have evolved or been modified during development after my participation."
+    },
+    "valueProposition": {
+      "title": "The value proposition",
+      "p1": "Jobmatch positions itself as the \"job Tinder\" — and it's not just a tagline. The platform doesn't ask you to search for jobs: it recommends positions you might match with based on your profile.",
+      "keyDecision": "You can have more than one active professional profile at a time — applying as an administrator and also as a designer — without one identity interfering with the other.",
+      "p2": "The Tinder metaphor translates directly into the interface: in the candidate dashboard, job openings appear as cards you can swipe right to apply or left to pass. A familiar mechanic that removes the friction of applying and makes exploring opportunities feel natural, not tedious.",
+      "image": {
+        "alt": "JobMatch swipe-to-apply interaction in the candidate dashboard",
+        "caption": "Swipe-to-apply interaction — Candidates browse suggested opportunities and swipe to apply."
+      }
+    },
+    "advantage": {
+      "title": "My advantage before starting",
+      "p1": "I didn't come to this project with a blank slate — I came with two perspectives that rarely exist in the same designer.",
+      "p2": "As a business administrator, I experienced the recruiting process from the company side: defining profiles, evaluating candidates, coordinating hiring. As someone who actively searched for work for over a year, I experienced it from the other side too: the frustrations, the uncertainty, the lack of feedback.",
+      "p3": "That dual perspective wasn't a biographical detail — it was the foundation for every design decision I made. Before drawing a single screen, I already knew what hurt on both ends of the process."
+    },
+    "process": {
+      "title": "Process: understand before designing",
+      "p1": "From that foundation I began a research phase to validate assumptions and better understand the business.",
+      "p2": "I developed a competitive benchmark, proto-personas, information architecture, user flows, and feature prioritization.",
+      "p3": "The most valuable part of this phase was working closely with a recruiting specialist who validated the proposed flows against real operational scenarios. I didn't design on assumptions — I designed on verified operational logic.",
+      "image1": {
+        "alt": "JobMatch information architecture map",
+        "caption": "Information architecture"
+      },
+      "image2": {
+        "alt": "JobMatch proposed user flow for the talent profile",
+        "caption": "User flow for discovering and applying to suggested job opportunities."
+      },
+      "image3": {
+        "alt": "JobMatch user flow for candidate evaluation and selection",
+        "caption": "User flow for candidate evaluation and selection."
+      }
+    },
+    "coreDesignChallenge": {
+      "title": "The core design challenge: one ecosystem, not three products",
+      "p1": "Designing for three profiles in one platform has a clear risk: that each profile feels like the platform wasn't made for them.",
+      "p2": "The key was nailing the main flows for each profile with precision — not just defining what each user could do, but how they'd do it, in what order, what information they needed at each step, and where the three flows intersected without colliding.",
+      "profiles": {
+        "candidates": { "label": "Candidates", "description": "discover match-recommended vacancies, apply with a gesture, manage multiple professional profiles simultaneously." },
+        "companies": { "label": "Companies", "description": "post vacancies, manage hiring processes, and evaluate candidates with full pipeline visibility." },
+        "recruiters": { "label": "Independent recruiters", "description": "manage multiple simultaneous processes while collaborating with different companies from a single place." }
+      },
+      "p3": "Every design decision was evaluated against all three profiles before being validated.",
+      "image": {
+        "alt": "JobMatch ecosystem — candidates, companies, and recruiters",
+        "caption": "JobMatch ecosystem — how candidates, companies, and recruiters connect within a single platform."
+      }
+    },
+    "flowToInterface": {
+      "title": "From flow to interface",
+      "p1": "With the strategy and flows defined, I developed the full visual experience of the platform: high-fidelity interfaces, design system, reusable component library, and interaction patterns.",
+      "keyDecisionLabel": "Key design decision:",
+      "keyDecision": "I also participated in visual identity decisions. One of them was introducing purple as the accent color — a deliberate choice to stand out in a market dominated by blues and greens, conveying innovation and closeness. That decision became a core part of Jobmatch's visual identity.",
+      "videoCaption": "Design system and reusable component library."
+    },
+    "kuska": {
+      "title": "Kuska: the AI with a face and personality",
+      "p1": "The platform needed more than functionality — it needed presence.",
+      "p2": "The team had the idea of an AI assistant that would guide users throughout the entire process. My job was to give it a face and a personality consistent with the product's identity.",
+      "p3": "Its name is Kuska — a Quechua word meaning \"together\" or \"united\" — reflecting the platform's core mission. Inspired by classic assistants like Clippy but designed not to be intrusive, Kuska evolved visually from an orange tiger to an otorongo (jaguar) — an emblematic Peruvian animal — strengthening the connection between the product and its cultural roots.",
+      "p4": "I explored multiple concepts using AI tools until reaching the final version.",
+      "image": {
+        "alt": "Kuska's visual evolution — from early concepts to the final version",
+        "caption": "Kuska's visual evolution — from early concepts to the final version."
+      }
+    },
+    "result": {
+      "title": "Result",
+      "p1": "Jobmatch is already on the market. Much of the information architecture, main flows, design system, and visual identity developed during this project are present in the final product — including Kuska.",
+      "liveProductPrefix": "You can explore the live product at",
+      "liveProductLabel": "jmperu.com",
+      "videoCaption": "Talent profile creation flow in the final product."
+    },
+    "whatILearned": {
+      "title": "What I learned",
+      "intro": "This project taught me things that still shape the way I work today. Four lessons that stuck with me:",
+      "lessons": [
+        {
+          "number": "01",
+          "title": "Start with the core",
+          "description": "Defining core flows early helped us prioritize the essential experience and avoid unnecessary scope."
+        },
+        {
+          "number": "02",
+          "title": "Design decisions need a voice",
+          "description": "I learned to clearly articulate and defend design decisions while balancing user needs, business priorities, and technical constraints."
+        },
+        {
+          "number": "03",
+          "title": "Domain expertise changes the design",
+          "description": "Working with a recruitment specialist, combined with my own experience on both sides of the hiring process, helped me design from real understanding rather than assumptions."
+        },
+        {
+          "number": "04",
+          "title": "Collaboration accelerates decisions",
+          "description": "Working directly with the business owner and developer through design critiques allowed us to resolve questions quickly and keep the product moving."
+        }
+      ]
+    }
+  }
+}

@@ -1,11 +1,11 @@
 export function KeyDecision({
   children,
   accentColor,
-  label = "Key product decision:",
+  label,
 }: {
   children: React.ReactNode;
   accentColor: string;
-  label?: string;
+  label: string;
 }) {
   return (
     <div

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useInView } from "motion/react";
+import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/button";
 import { TiltText } from "@/components/ui/tilt-text";
 
@@ -10,6 +11,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const TILT_DELAY_MS = 2000;
 
 export function Hero() {
+  const t = useTranslations("hero");
   const headingRef = useRef<HTMLHeadingElement>(null);
   const isHeadingInView = useInView(headingRef, { once: true, amount: 0.7 });
   const [tiltActive, setTiltActive] = useState(false);
@@ -53,11 +55,11 @@ export function Hero() {
         >
           <p className="flex flex-col gap-1 font-sans text-[13px] font-medium uppercase tracking-[0.2em] text-pink md:flex-row md:items-center md:gap-2">
             <span className="inline-flex items-center gap-2">
-              UX UI DESIGNER
+              {t("eyebrowRole")}
               <span className="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-pink md:hidden" />
             </span>
             <span className="hidden h-1.5 w-1.5 shrink-0 rounded-full bg-pink md:inline-block" />
-            <span>BUSINESS CONSULTANT</span>
+            <span>{t("eyebrowConsultant")}</span>
           </p>
 
           <h1
@@ -65,7 +67,7 @@ export function Hero() {
             className="font-display text-[34px] font-semibold leading-[1.05] sm:text-[52px] lg:text-[60px]"
           >
             <TiltText
-              text="I'm Lucía Martos"
+              text={t("heading")}
               activeColor="#FFFFFF"
               restColor="#FF3D9B"
               isActive={tiltActive}
@@ -73,17 +75,15 @@ export function Hero() {
           </h1>
 
           <p className="max-w-md font-sans text-lg leading-relaxed text-cream/90">
-            13 years consulting across industries. Now I apply that to UX/UI
-            design — so your product works for users and the operation
-            behind it.
+            {t("paragraph")}
           </p>
 
           <div className="mt-2 flex flex-wrap items-center gap-4">
             <ButtonLink href="/#contact" variant="secondary">
-              Contact me
+              {t("ctaContact")}
             </ButtonLink>
             <ButtonLink href="/#projects" variant="primary">
-              See my work
+              {t("ctaProjects")}
             </ButtonLink>
           </div>
         </motion.div>
@@ -105,7 +105,7 @@ export function Hero() {
         >
           <Image
             src="/images/lucia-hero-uxui.png?v=5"
-            alt="Lucía Martos sitting next to 3D UX/UI letters"
+            alt={t("imageAlt")}
             fill
             priority
             sizes="(min-width: 1024px) 46vw, (min-width: 640px) 448px, 368px"

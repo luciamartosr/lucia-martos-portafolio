@@ -1,9 +1,11 @@
 import { Info } from "lucide-react";
 
 export function CaseDisclaimer({
+  heading,
   accentColor,
   children,
 }: {
+  heading: string;
   accentColor: string;
   children: React.ReactNode;
 }) {
@@ -19,7 +21,7 @@ export function CaseDisclaimer({
       />
       <div className="flex flex-col gap-1">
         <p className="font-display font-semibold" style={{ color: accentColor }}>
-          A note on the case study
+          {heading}
         </p>
         <p className="leading-relaxed text-ink-soft">{children}</p>
       </div>

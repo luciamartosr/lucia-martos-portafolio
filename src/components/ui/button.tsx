@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import type { ComponentPropsWithoutRef } from "react";
 
 type ButtonVariant = "primary" | "secondary";
@@ -11,6 +11,16 @@ const variantStyles: Record<ButtonVariant, string> = {
   primary: "bg-pink text-cream hover:bg-pink-dark",
   secondary: "bg-cream text-pink hover:bg-white",
 };
+
+/**
+ * For hrefs that must never go through the locale-aware `Link` above —
+ * same-origin static assets like the resume PDF, which next-intl would
+ * otherwise treat as an internal route and prefix with `/es`, 404ing.
+ * Use with a plain `<a>` tag.
+ */
+export function buttonClassName(variant: ButtonVariant, className?: string) {
+  return cn(baseStyles, variantStyles[variant], className);
+}
 
 type ButtonProps = ComponentPropsWithoutRef<"button"> & {
   variant?: ButtonVariant;

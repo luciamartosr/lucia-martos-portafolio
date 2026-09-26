@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import { X, ZoomIn, ZoomOut, Maximize2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const MIN_SCALE = 1;
 const MAX_SCALE = 4;
@@ -24,6 +25,7 @@ export function LightboxImage({
   width?: number;
   height?: number;
 }) {
+  const t = useTranslations("caseStudyShared");
   const [open, setOpen] = useState(false);
   const [scale, setScale] = useState(MIN_SCALE);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
@@ -207,7 +209,7 @@ export function LightboxImage({
         type="button"
         onClick={() => setOpen(true)}
         className="group relative overflow-hidden rounded-2xl border border-ink/10 bg-white"
-        aria-label={`View ${alt} in full screen`}
+        aria-label={t("viewInFullScreen", { alt })}
       >
         <Image
           src={src}
@@ -220,7 +222,7 @@ export function LightboxImage({
         <div className="absolute inset-0 flex items-center justify-center bg-ink/0 opacity-0 transition-all duration-300 ease-out group-hover:bg-ink/40 group-hover:opacity-100">
           <span className="flex items-center gap-2 rounded-full bg-cream px-4 py-2 font-sans text-sm font-medium text-ink">
             <ZoomIn className="h-4 w-4" />
-            View full screen
+            {t("viewFullScreen")}
           </span>
         </div>
       </button>
@@ -249,7 +251,7 @@ export function LightboxImage({
                 }}
                 disabled={scale <= MIN_SCALE}
                 className="hidden h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20 disabled:opacity-30 lg:flex"
-                aria-label="Zoom out"
+                aria-label={t("zoomOut")}
               >
                 <ZoomOut className="h-5 w-5" />
               </button>
@@ -261,7 +263,7 @@ export function LightboxImage({
                 }}
                 disabled={scale >= MAX_SCALE}
                 className="hidden h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20 disabled:opacity-30 lg:flex"
-                aria-label="Zoom in"
+                aria-label={t("zoomIn")}
               >
                 <ZoomIn className="h-5 w-5" />
               </button>
@@ -273,7 +275,7 @@ export function LightboxImage({
                     resetZoom();
                   }}
                   className="hidden h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20 lg:flex"
-                  aria-label="Reset zoom"
+                  aria-label={t("resetZoom")}
                 >
                   <Maximize2 className="h-4 w-4" />
                 </button>
@@ -285,7 +287,7 @@ export function LightboxImage({
                   setOpen(false);
                 }}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20"
-                aria-label="Close full screen image"
+                aria-label={t("closeFullScreenImage")}
               >
                 <X className="h-5 w-5" />
               </button>

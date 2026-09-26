@@ -1,4 +1,7 @@
+"use client";
+
 import { Download } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 export function NavResumeLink({
@@ -8,6 +11,8 @@ export function NavResumeLink({
   className?: string;
   onClick?: () => void;
 }) {
+  const t = useTranslations("nav");
+
   return (
     <a
       href="/lucia-martos-resume-082026.pdf"
@@ -18,7 +23,7 @@ export function NavResumeLink({
         className,
       )}
     >
-      Resume
+      {t("resume")}
       <Download className="h-4 w-4" />
     </a>
   );

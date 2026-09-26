@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X, Maximize2, Play, Pause } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function LightboxVideo({
   src,
@@ -13,6 +14,7 @@ export function LightboxVideo({
   caption?: string;
   autoPlayOnView?: boolean;
 }) {
+  const t = useTranslations("caseStudyShared");
   const [open, setOpen] = useState(false);
   const [playing, setPlaying] = useState(false);
   const inlineVideoRef = useRef<HTMLVideoElement>(null);
@@ -83,7 +85,7 @@ export function LightboxVideo({
           <button
             type="button"
             onClick={togglePlay}
-            aria-label={playing ? "Pause video" : "Play video"}
+            aria-label={playing ? t("pauseVideo") : t("playVideo")}
             className={`absolute inset-0 flex items-center justify-center transition-colors duration-300 ease-out ${
               playing
                 ? "bg-ink/0 opacity-0 hover:bg-ink/20 hover:opacity-100"
@@ -106,7 +108,7 @@ export function LightboxVideo({
             e.stopPropagation();
             setOpen(true);
           }}
-          aria-label="View video in full screen"
+          aria-label={t("viewVideoFullScreen")}
           className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-ink/60 text-cream opacity-0 transition-opacity duration-200 ease-out group-hover:opacity-100"
         >
           <Maximize2 className="h-4 w-4" />
@@ -132,7 +134,7 @@ export function LightboxVideo({
               type="button"
               onClick={() => setOpen(false)}
               className="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors duration-200 hover:bg-cream/20"
-              aria-label="Close full screen video"
+              aria-label={t("closeFullScreenVideo")}
             >
               <X className="h-5 w-5" />
             </button>

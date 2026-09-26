@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "title": "Lucía Martos — Diseñadora UX/UI y Consultora Empresarial",
+    "description": "14 años asesorando empresas en distintas industrias. Ahora aplico eso al diseño UX/UI — para que tu producto funcione no solo para los usuarios, sino para la operación detrás de él."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "howCanIHelp": "Cómo puedo ayudar",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "resume": "CV",
+    "languageLabel": "Idioma"
+  },
+  "hero": {
+    "eyebrowRole": "DISEÑADORA UX UI",
+    "eyebrowConsultant": "CONSULTORA EMPRESARIAL",
+    "heading": "Soy Lucía Martos",
+    "paragraph": "14 años como consultora en distintas industrias. Ahora aplico eso al diseño UX/UI — para que tu producto funcione tanto para los usuarios como para la operación detrás de él.",
+    "ctaContact": "Contáctame",
+    "ctaProjects": "Ver mi trabajo",
+    "imageAlt": "Lucía Martos sentada junto a las letras 3D UX/UI"
+  },
+  "about": {
+    "heading": "Sobre mí",
+    "downloadResume": "Descargar mi CV",
+    "readMore": "Leer más",
+    "readLess": "Leer menos",
+    "shortParagraph": "Antes de abrir Figma por primera vez, ya hacía lo que hacen los diseñadores de producto: hablar con personas reales, entender sus problemas e iterar rápido. Solo que no sabía que eso tenía nombre. Soy becaria Fulbright con una maestría en Ciencias del Emprendimiento de la Universidad de Florida. Tengo 14 años de experiencia como consultora empresarial y 4 años diseñando productos digitales. Asesoro startups en etapa temprana, he ganado un programa de Design Thinking patrocinado por IDEO, y construyo productos que funcionan tan bien por dentro como se ven por fuera.",
+    "expandedParagraphs": [
+      "Antes de abrir Figma por primera vez, ya hacía lo que hacen los diseñadores de producto: salir a hablar con personas reales, entender sus problemas y volver a iterar. Solo que no sabía que eso tenía nombre.",
+      "Soy diseñadora UX/UI peruana radicada en Colombia. Estudié administración de empresas y luego me convertí en becaria Fulbright, completando una maestría en Ciencias del Emprendimiento en la Universidad de Florida. Ahí participé en Startup Gainesville — un programa de 48 horas donde mi equipo presentó su propuesta y ganó — y en un programa de design thinking patrocinado por IDEO, donde mi equipo resolvió un reto real para una organización sin fines de lucro. Ambas experiencias definieron cómo pienso los problemas: desde el usuario hacia afuera, no desde la solución hacia adentro.",
+      "Durante más de 14 años trabajé como consultora empresarial en distintas industrias — implementando sistemas de gestión de calidad, optimizando procesos, capacitando equipos. Desde 2023 asesoro a emprendedores en etapa temprana en Cajamarca Incuba, la incubadora de negocios de la Cámara de Comercio y Producción de Cajamarca (Perú), ayudándolos a validar ideas, fortalecer sus propuestas de valor y postular a fondos de capital para startups. Uno de los equipos que asesoré ganó un fondo de Startup Perú.",
+      "Hace cuatro años descubrí el diseño UX/UI — y todo por fin tuvo sentido. Finalmente tenía las herramientas para construir lo que llevaba años ayudando a otros a imaginar.",
+      "Si estás construyendo un producto que necesita funcionar tan bien por dentro como se ve por fuera, hablemos."
+    ]
+  },
+  "howCanIHelp": {
+    "heading": "¿Cómo puedo ayudarte?",
+    "services": [
+      {
+        "number": "01",
+        "title": "Diseño de experiencia de usuario",
+        "description": "Mapeo a tus usuarios, tus procesos y los puntos de fricción entre ambos — luego diseño flujos que tienen sentido para las dos partes."
+      },
+      {
+        "number": "02",
+        "title": "Arquitectura de información",
+        "description": "Estructuro productos complejos para que los usuarios siempre sepan dónde están y qué hacer a continuación. Especialmente útil para plataformas con múltiples roles y flujos de trabajo"
+      },
+      {
+        "number": "03",
+        "title": "Prototipado interactivo",
+        "description": "De baja a alta fidelidad — prototipos diseñados para probar hipótesis temprano y comunicar decisiones con claridad a tu equipo."
+      },
+      {
+        "number": "04",
+        "title": "Pruebas de usabilidad",
+        "description": "Diseño y ejecuto pruebas con usuarios reales para validar qué funciona y detectar qué no, antes de que empiece el desarrollo."
+      },
+      {
+        "number": "05",
+        "title": "Auditoría UX",
+        "description": "Una revisión exhaustiva de tu producto actual para identificar problemas de usabilidad, vacíos en los flujos y oportunidades para mejorar la experiencia."
+      },
+      {
+        "number": "06",
+        "title": "Documentación de producto y diseño",
+        "description": "Anotaciones claras, documentación de flujos y reglas de diseño para que tu equipo de desarrollo siempre entienda la intención detrás de cada pantalla."
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Proyectos",
+    "featuredEyebrow": "PROYECTO DESTACADO",
+    "featured": {
+      "imageAlt": "Shortcat — plataforma ERP para la industria de la construcción",
+      "title": "Plataforma ERP para la industria de la construcción",
+      "name": "Shortcat",
+      "tags": ["Flujos complejos", "Diseño UX/UI", "Sistema de diseño"],
+      "hoverDescription": "Diseñé un ERP que simplifica operaciones complejas de construcción."
+    },
+    "secondary": {
+      "imageAlt": "Proyecto JobMatch",
+      "title": "Plataforma de reclutamiento",
+      "name": "JobMatch",
+      "tags": ["Estrategia de producto", "Investigación UX", "Diseño UX/UI"],
+      "hoverDescription": "Conectando empresas, reclutadores y talento a través de una experiencia fluida."
+    },
+    "readCaseStudy": "Ver caso de estudio",
+    "moreProjectsText": "¿Buscas más? Algunos proyectos anteriores siguen en mi portafolio de Behance — pronto traeré mis favoritos aquí.",
+    "viewMoreOnBehance": "Ver más en Behance"
+  },
+  "footer": {
+    "logoAlt": "Lucía Martos",
+    "role": "Diseñadora UX/UI",
+    "consultant": "Consultora empresarial",
+    "basedIn": "Con base en Colombia, trabajando globalmente.",
+    "headingLine1": "Construyamos algo",
+    "headingLine2": "que funcione.",
+    "emailMe": "Escríbeme",
+    "emailCopied": "Correo copiado al portapapeles",
+    "whatsappMe": "Escríbeme por WhatsApp",
+    "links": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "howCanIHelp": "Cómo puedo ayudar",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "copyright": "© {year} Lucía Martos. Todos los derechos reservados"
+  },
+  "caseStudyShared": {
+    "backToProjects": "Volver a proyectos",
+    "backToTop": "Volver arriba",
+    "keyDecisionDefaultLabel": "Decisión clave de producto:",
+    "disclaimerHeading": "Una nota sobre este caso de estudio",
+    "viewInFullScreen": "Ver {alt} en pantalla completa",
+    "viewFullScreen": "Ver en pantalla completa",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "resetZoom": "Restablecer zoom",
+    "closeFullScreenImage": "Cerrar imagen en pantalla completa",
+    "playVideo": "Reproducir video",
+    "pauseVideo": "Pausar video",
+    "viewVideoFullScreen": "Ver video en pantalla completa",
+    "closeFullScreenVideo": "Cerrar video en pantalla completa"
+  },
+  "caseStudyShortcat": {
+    "meta": {
+      "title": "Shortcat — Caso de estudio | Lucía Martos",
+      "description": "ERP para la gestión de compras en el sector construcción. Un caso de estudio de Lucía Martos, Lead Product Designer."
+    },
+    "hero": {
+      "eyebrow": "Caso de estudio",
+      "title": "Shortcat",
+      "tagline": "ERP para la gestión de compras en el sector construcción.",
+      "tags": ["Flujos complejos", "Diseño UX/UI", "Sistema de diseño"],
+      "imageAlt": "Shortcat — plataforma ERP para la industria de la construcción"
+    },
+    "stats": [
+      { "label": "Rol", "value": "Lead Product Designer" },
+      { "label": "Duración", "value": "13 meses" },
+      { "label": "Estado", "value": "En producción" },
+      { "label": "Ubicación", "value": "Perú" }
+    ],
+    "hook": "Un brief inicial, documentación incompleta y flujos que seguían cambiando durante la ejecución. Este es el producto que lideré durante 13 meses — y que hoy está en producción.",
+    "context": {
+      "title": "El contexto",
+      "p1": "El sector construcción funciona a base de compras. Cada proyecto depende de conseguir los materiales correctos, de los proveedores correctos, al precio correcto — y a tiempo. La mayoría de empresas todavía gestiona esto con hojas de cálculo, correos y WhatsApp.",
+      "p2": "Shortcat nació para cambiar eso — no solo digitalizando el proceso, sino reimaginándolo: convirtiendo decisiones de compra individuales en poder de compra colectivo.",
+      "calloutP": "Me uní como diseñadora líder con una visión de alto nivel ya documentada. Los flujos necesitaron ajustes desde el primer día — y siguieron evolucionando durante todo el proceso de diseño. Mi rol no era solo diseñar pantallas — era facilitar las conversaciones que convirtieron ideas de negocio en flujos documentados, y flujos documentados en un producto real."
+    },
+    "whatIDesigned": {
+      "title": "Lo que diseñé",
+      "ecosystemImage": {
+        "alt": "Ecosistema de producto Shortcat — seis sistemas interconectados",
+        "caption": "Ecosistema de producto — seis sistemas interconectados"
+      },
+      "intro": "Construí un ERP con seis sistemas interconectados que cubren todo el ciclo de gestión de compras, enfocado principalmente en el sector construcción — con una arquitectura diseñada para expandirse a otros sectores en el futuro.",
+      "coreFlow": {
+        "heading": "Flujo central de compras",
+        "p1": "Desde la creación del requerimiento hasta el cierre con evaluación bidireccional. El flujo soporta aprobaciones condicionales configurables — porque Shortcat atiende tanto a empresas donde el gerente general aprueba solo, como a empresas con múltiples niveles jerárquicos.",
+        "p2": "El componente más complejo fue la tabla comparativa — una grilla donde el comprador evalúa cotizaciones de múltiples proveedores por ítem y las adjudica de forma granular. Antes de diseñar una sola pantalla, me reuní con usuarios de logística y compras de distintas empresas para entender cómo evalúan cotizaciones en la práctica: qué criterios importan más, en qué orden deciden, y cómo piensan cuando diez proveedores cotizan diez ítems cada uno.",
+        "keyDecision": "Mostrar visualmente cuál es la mejor propuesta por ítem sin forzar la elección — porque en compras reales, el precio no siempre es el único criterio. Esa decisión surgió de entender la lógica del negocio, no de una especificación.",
+        "p3": "El flujo cierra con Shortcat Drive — gestión documental por orden de compra directamente en la plataforma, eliminando el caos de los correos — y una evaluación bidireccional donde compradores y proveedores se califican mutuamente. Incluí la calificación del comprador porque en construcción, saber si un cliente paga tarde o cambia condiciones a último momento es tan valioso como evaluar a un proveedor."
+      },
+      "comparisonImage": {
+        "alt": "Tabla comparativa y flujo de adjudicación de Shortcat",
+        "caption": "Tabla comparativa y adjudicación"
+      },
+      "collaborative": {
+        "heading": "Compra colaborativa — el mayor diferenciador",
+        "p1": "Compra grupal: varias empresas juntan volumen para negociar mejores precios en conjunto.",
+        "p2": "Subasta inversa: Shortcat identifica los productos más demandados en la plataforma y lanza una subasta donde el precio baja a medida que se suman más compradores.",
+        "p3": "Ambas funcionalidades tenían pantallas anteriores construidas sobre una lógica de negocio incompleta. Las reconstruí desde la lógica hacia arriba, a través de múltiples sesiones con el cliente.",
+        "keyDecision": "En la compra grupal, definir cuánta visibilidad tiene cada empresa sobre las demás. Demasiada información rompía la confianza entre competidores; muy poca hacía imposible coordinar la compra. Encontrar ese equilibrio tomó varias iteraciones y fue una decisión de producto, no de interfaz."
+      },
+      "learnMore": "¿Quieres ver estos flujos en detalle? Con gusto te muestro las pantallas de compra grupal y subasta inversa en una entrevista — hablemos.",
+      "projectsCost": {
+        "heading": "Proyectos y gestión de costos",
+        "p1": "Lo que empezó como un campo de \"centro de costos\" dentro de Configuración evolucionó en un módulo completo: presupuestos por partida y subpartida, gestión de órdenes de cambio, seguimiento de costos vinculado a cada partida, y un dashboard de ejecución en tiempo real.",
+        "keyDecision": "Separar \"Proyectos\" de \"Gestión de costos\" en dos secciones distintas en vez de una sola. Proyectos es donde defines y planificas — costos es donde controlas y ejecutas. Fusionarlos en una sola pantalla generaba confusión sobre qué acción estaba realizando el usuario en cada momento.",
+        "videoCaption": "Módulo de proyectos y dashboard de costos."
+      },
+      "additionalModules": {
+        "heading": "Módulos adicionales diseñados",
+        "p1": "Tres módulos diseñados y en cola para desarrollo: un marketplace de requerimientos rediseñado, Shortcat Academy (videos tutoriales y plantillas descargables con un panel de administración), y planes de suscripción premium con lógica de activación basada en webhooks y un panel de gestión de suscriptores."
+      }
+    },
+    "whyDifferent": {
+      "title": "Por qué este proyecto es diferente",
+      "p1": "No ejecutaba briefs — ayudaba a escribirlos. Los flujos más complejos no tenían una especificación clara. Facilité las sesiones, mapeé a los stakeholders, definí la lógica, y solo entonces diseñé.",
+      "p2": "Mis 14 años como consultora empresarial me permiten leer la lógica operativa detrás de cada requerimiento antes de abrir Figma. Por eso pude diseñar una evaluación bidireccional, una subasta inversa, o un sistema de control presupuestal por partida — no porque me lo entregaron en un documento, sino porque entiendo cómo funcionan realmente estas cosas dentro de empresas reales."
+    },
+    "whatILearned": {
+      "title": "Lo que aprendí",
+      "p1": "Avanzar sin validar con usuarios reales no es progreso — es una suposición. La fricción post-lanzamiento en el flujo central confirmó lo que había señalado desde el inicio. Esa experiencia definió cómo abordo las decisiones de producto ahora: defender al usuario con argumentos, documentar el razonamiento, e insistir en la validación temprana incluso bajo presión de startup.",
+      "highlight": "Un producto no termina cuando se lanza. Termina cuando funciona bien para quien lo usa.",
+      "liveProductPrefix": "Puedes explorar el producto en vivo en",
+      "liveProductLabel": "clientes.shortcat.ai"
+    }
+  },
+  "caseStudyJobmatch": {
+    "meta": {
+      "title": "JobMatch — Caso de estudio | Lucía Martos",
+      "description": "Diseñando una plataforma de empleo para tres tipos de usuario — sin convertirla en tres productos distintos. Un caso de estudio de Lucía Martos, UX/UI Designer."
+    },
+    "hero": {
+      "eyebrow": "Caso de estudio",
+      "title": "JobMatch",
+      "tagline": "Diseñando una plataforma de empleo para tres tipos de usuario — sin convertirla en tres productos distintos.",
+      "tags": ["Estrategia de producto", "Investigación UX", "Diseño UX/UI"],
+      "imageAlt": "JobMatch — plataforma de empleo"
+    },
+    "stats": [
+      { "label": "Rol", "value": "Diseñadora UX/UI" },
+      { "label": "Duración", "value": "4 meses" },
+      { "label": "Estado", "value": "En producción" },
+      { "label": "Ubicación", "value": "Perú" }
+    ],
+    "hook": "¿Qué pasaría si encontrar trabajo fuera tan fácil como deslizar en Tinder? Eso es Jobmatch — y así es como lo diseñé.",
+    "challenge": {
+      "title": "El reto",
+      "p1": "Encontrar talento sigue siendo un proceso complejo para todos los involucrados — y hay más de dos lados en esta historia.",
+      "p2": "Jobmatch se construyó para conectar tres perfiles con necesidades distintas: empresas que buscan optimizar su proceso de contratación, candidatos que buscan oportunidades más rápidas y transparentes, y reclutadores independientes que gestionan múltiples procesos a la vez.",
+      "p3": "El verdadero reto no era diseñar una plataforma de empleo — era diseñar un solo ecosistema que sirviera a los tres sin agregar complejidad ni sacrificar la experiencia de nadie.",
+      "disclaimer": "Este caso de estudio refleja el producto y los flujos diseñados durante mi participación en el proyecto. Algunas interfaces y flujos de usuario pueden haber evolucionado o sido modificados durante el desarrollo posterior a mi participación."
+    },
+    "valueProposition": {
+      "title": "La propuesta de valor",
+      "p1": "Jobmatch se posiciona como el \"Tinder del empleo\" — y no es solo un eslogan. La plataforma no te pide buscar empleos: te recomienda posiciones con las que podrías hacer match según tu perfil.",
+      "keyDecision": "Puedes tener más de un perfil profesional activo a la vez — postulando como administrador y también como diseñador — sin que una identidad interfiera con la otra.",
+      "p2": "La metáfora de Tinder se traduce directamente en la interfaz: en el dashboard del candidato, las vacantes aparecen como tarjetas que puedes deslizar a la derecha para postular o a la izquierda para pasar. Una mecánica familiar que elimina la fricción de postular y hace que explorar oportunidades se sienta natural, no tedioso.",
+      "image": {
+        "alt": "Interacción de deslizar para postular en el dashboard del candidato de JobMatch",
+        "caption": "Interacción de deslizar para postular — Los candidatos exploran oportunidades sugeridas y deslizan para postular."
+      }
+    },
+    "advantage": {
+      "title": "Mi ventaja antes de empezar",
+      "p1": "No llegué a este proyecto en blanco — llegué con dos perspectivas que rara vez existen en un mismo diseñador.",
+      "p2": "Como administradora de empresas, viví el proceso de reclutamiento desde el lado de la empresa: definiendo perfiles, evaluando candidatos, coordinando contrataciones. Como alguien que buscó trabajo activamente durante más de un año, también lo viví desde el otro lado: las frustraciones, la incertidumbre, la falta de retroalimentación.",
+      "p3": "Esa doble perspectiva no fue un detalle biográfico — fue la base de cada decisión de diseño que tomé. Antes de dibujar una sola pantalla, ya sabía qué dolía en ambos extremos del proceso."
+    },
+    "process": {
+      "title": "Proceso: entender antes de diseñar",
+      "p1": "Desde esa base inicié una fase de investigación para validar supuestos y entender mejor el negocio.",
+      "p2": "Desarrollé un benchmark competitivo, proto-personas, arquitectura de información, flujos de usuario y priorización de funcionalidades.",
+      "p3": "La parte más valiosa de esta fase fue trabajar de cerca con una especialista en reclutamiento que validó los flujos propuestos contra escenarios operativos reales. No diseñé sobre supuestos — diseñé sobre lógica operativa verificada.",
+      "image1": {
+        "alt": "Mapa de arquitectura de información de JobMatch",
+        "caption": "Arquitectura de información"
+      },
+      "image2": {
+        "alt": "Flujo de usuario propuesto de JobMatch para el perfil de talento",
+        "caption": "Flujo de usuario para descubrir y postular a oportunidades laborales sugeridas."
+      },
+      "image3": {
+        "alt": "Flujo de usuario de JobMatch para evaluación y selección de candidatos",
+        "caption": "Flujo de usuario para evaluación y selección de candidatos."
+      }
+    },
+    "coreDesignChallenge": {
+      "title": "El reto central de diseño: un ecosistema, no tres productos",
+      "p1": "Diseñar para tres perfiles en una sola plataforma tiene un riesgo claro: que cada perfil sienta que la plataforma no fue hecha para él.",
+      "p2": "La clave fue definir con precisión los flujos principales de cada perfil — no solo qué podía hacer cada usuario, sino cómo lo haría, en qué orden, qué información necesitaba en cada paso, y dónde se cruzaban los tres flujos sin chocar entre sí.",
+      "profiles": {
+        "candidates": { "label": "Candidatos", "description": "descubren vacantes recomendadas por match, postulan con un gesto, y gestionan múltiples perfiles profesionales simultáneamente." },
+        "companies": { "label": "Empresas", "description": "publican vacantes, gestionan procesos de contratación, y evalúan candidatos con visibilidad completa del pipeline." },
+        "recruiters": { "label": "Reclutadores independientes", "description": "gestionan múltiples procesos simultáneos mientras colaboran con distintas empresas desde un solo lugar." }
+      },
+      "p3": "Cada decisión de diseño se evaluó contra los tres perfiles antes de ser validada.",
+      "image": {
+        "alt": "Ecosistema de JobMatch — candidatos, empresas y reclutadores",
+        "caption": "Ecosistema de JobMatch — cómo se conectan candidatos, empresas y reclutadores dentro de una sola plataforma."
+      }
+    },
+    "flowToInterface": {
+      "title": "Del flujo a la interfaz",
+      "p1": "Con la estrategia y los flujos definidos, desarrollé toda la experiencia visual de la plataforma: interfaces de alta fidelidad, sistema de diseño, librería de componentes reutilizables y patrones de interacción.",
+      "keyDecisionLabel": "Decisión clave de diseño:",
+      "keyDecision": "También participé en decisiones de identidad visual. Una de ellas fue introducir el morado como color de acento — una elección deliberada para destacar en un mercado dominado por azules y verdes, transmitiendo innovación y cercanía. Esa decisión se convirtió en parte central de la identidad visual de Jobmatch.",
+      "videoCaption": "Sistema de diseño y librería de componentes reutilizables."
+    },
+    "kuska": {
+      "title": "Kuska: la IA con rostro y personalidad",
+      "p1": "La plataforma necesitaba más que funcionalidad — necesitaba presencia.",
+      "p2": "El equipo tuvo la idea de un asistente de IA que guiara a los usuarios durante todo el proceso. Mi trabajo fue darle un rostro y una personalidad coherente con la identidad del producto.",
+      "p3": "Se llama Kuska — una palabra quechua que significa \"junto\" o \"unido\" — reflejando la misión central de la plataforma. Inspirado en asistentes clásicos como Clippy pero diseñado para no ser intrusivo, Kuska evolucionó visualmente de un tigre naranja a un otorongo (jaguar) — un animal emblemático peruano — fortaleciendo la conexión entre el producto y sus raíces culturales.",
+      "p4": "Exploré múltiples conceptos usando herramientas de IA hasta llegar a la versión final.",
+      "image": {
+        "alt": "Evolución visual de Kuska — de los primeros conceptos a la versión final",
+        "caption": "Evolución visual de Kuska — de los primeros conceptos a la versión final."
+      }
+    },
+    "result": {
+      "title": "Resultado",
+      "p1": "Jobmatch ya está en el mercado. Gran parte de la arquitectura de información, los flujos principales, el sistema de diseño y la identidad visual desarrollados durante este proyecto están presentes en el producto final — incluyendo a Kuska.",
+      "liveProductPrefix": "Puedes explorar el producto en vivo en",
+      "liveProductLabel": "jmperu.com",
+      "videoCaption": "Flujo de creación de perfil de talento en el producto final."
+    },
+    "whatILearned": {
+      "title": "Lo que aprendí",
+      "intro": "Este proyecto me enseñó cosas que aún moldean mi forma de trabajar hoy. Cuatro lecciones que se me quedaron:",
+      "lessons": [
+        {
+          "number": "01",
+          "title": "Empieza por el núcleo",
+          "description": "Definir los flujos centrales desde el inicio nos ayudó a priorizar la experiencia esencial y evitar alcance innecesario."
+        },
+        {
+          "number": "02",
+          "title": "Las decisiones de diseño necesitan una voz",
+          "description": "Aprendí a articular y defender con claridad las decisiones de diseño, equilibrando las necesidades del usuario, las prioridades del negocio y las restricciones técnicas."
+        },
+        {
+          "number": "03",
+          "title": "El conocimiento del dominio cambia el diseño",
+          "description": "Trabajar con una especialista en reclutamiento, sumado a mi propia experiencia en ambos lados del proceso de contratación, me ayudó a diseñar desde un entendimiento real y no desde supuestos."
+        },
+        {
+          "number": "04",
+          "title": "La colaboración acelera las decisiones",
+          "description": "Trabajar directamente con el dueño del negocio y el desarrollador a través de críticas de diseño nos permitió resolver dudas rápidamente y mantener el producto avanzando."
+        }
+      ]
+    }
+  }
+}

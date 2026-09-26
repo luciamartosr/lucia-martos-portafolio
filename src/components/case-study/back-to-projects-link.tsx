@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowLeft } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export function BackToProjectsLink({
   color = "#02584B",
@@ -12,6 +13,7 @@ export function BackToProjectsLink({
   color?: string;
   className?: string;
 }) {
+  const t = useTranslations("caseStudyShared");
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -39,7 +41,7 @@ export function BackToProjectsLink({
           transitionTimingFunction: "ease-out",
         }}
       >
-        Back to projects
+        {t("backToProjects")}
       </span>
     </Link>
   );

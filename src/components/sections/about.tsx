@@ -3,28 +3,20 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useInView } from "motion/react";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { TiltText } from "@/components/ui/tilt-text";
-import { ButtonLink } from "@/components/ui/button";
+import { buttonClassName } from "@/components/ui/button";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 const TILT_DELAY_MS = 2000;
 
-const SHORT_PARAGRAPH =
-  "Before I ever opened Figma, I was already doing what product designers do — talking to real people, understanding their problems, and iterating fast. I just didn’t know it had a name yet. I’m a Fulbright Scholar with a Master’s in Science of Entrepreneurship from the University of Florida, 14 years as a business consultant, and 4 years designing digital products. I advise early-stage startups, I’ve won design thinking programs sponsored by IDEO, and I build products that work as well on the inside as they look on the outside.";
-
-const EXPANDED_PARAGRAPHS = [
-  "Before I ever opened Figma, I was already doing what product designers do — going out to talk to real people, understanding their problems, and coming back to iterate. I just didn’t know it had a name yet.",
-  "I studied business administration and went on to become a Fulbright Scholar, completing a Master of Science in Entrepreneurship at the University of Florida. There I participated in Startup Gainesville — a 48-hour startup program where my team pitched and won — and in an IDEO-sponsored design thinking program where my team solved a real challenge for a nonprofit. Both experiences shaped how I think about problems: from the user out, not from the solution in.",
-  "For over 14 years I worked as a business consultant across industries — implementing quality systems, optimizing processes, training teams. Since 2023 I’ve been advising early-stage entrepreneurs at Cajamarca Incuba, the business incubator of the Chamber of Commerce of Cajamarca (Peru), helping them validate ideas, strengthen their value propositions, and apply to startup funds. One of the teams I advised won a Startup Perú grant.",
-  "Four years ago I discovered UX/UI design — and everything clicked. I finally had the tools to build what I’d been helping others imagine for years.",
-  "If you’re building a product that needs to work as well on the inside as it looks on the outside, let’s talk.",
-];
-
 export function About() {
+  const t = useTranslations("about");
   const headingRef = useRef<HTMLHeadingElement>(null);
   const isHeadingInView = useInView(headingRef, { once: true, amount: 0.7 });
   const [tiltActive, setTiltActive] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const expandedParagraphs = t.raw("expandedParagraphs") as string[];
 
   useEffect(() => {
     if (!isHeadingInView) return;
@@ -48,21 +40,22 @@ export function About() {
             className="font-display text-4xl font-bold lg:text-5xl"
           >
             <TiltText
-              text="About me"
+              text={t("heading")}
               activeColor="#02584B"
               restColor="#FF3D9B"
               isActive={tiltActive}
             />
           </motion.h2>
 
-          <ButtonLink
+          {/* Resume PDF is a static asset, not an app route — use a plain
+              anchor so it's never run through the locale-aware Link. */}
+          <a
             href="/lucia-martos-resume-082026.pdf"
-            variant="primary"
             download
-            className="hidden w-fit lg:inline-flex"
+            className={buttonClassName("primary", "hidden w-fit lg:inline-flex")}
           >
-            Download my resume
-          </ButtonLink>
+            {t("downloadResume")}
+          </a>
         </div>
 
         <motion.div
@@ -82,7 +75,7 @@ export function About() {
                 transition={{ duration: 0.25, ease: "easeOut" }}
                 className="flex flex-col gap-6"
               >
-                {EXPANDED_PARAGRAPHS.map((paragraph) => (
+                {expandedParagraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </motion.div>
@@ -94,7 +87,7 @@ export function About() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
               >
-                {SHORT_PARAGRAPH}
+                {t("shortParagraph")}
               </motion.p>
             )}
           </AnimatePresence>
@@ -104,20 +97,19 @@ export function About() {
             onClick={() => setExpanded((v) => !v)}
             className="-mt-2 flex w-fit items-center gap-1.5 font-display text-base font-semibold text-pink transition-colors duration-200 hover:text-pink-dark"
           >
-            {expanded ? "Read less" : "Read more"}
+            {expanded ? t("readLess") : t("readMore")}
             <ChevronDown
               className={`h-4 w-4 transition-transform duration-200 ${expanded ? "rotate-180" : ""}`}
             />
           </button>
 
-          <ButtonLink
+          <a
             href="/lucia-martos-resume-082026.pdf"
-            variant="primary"
             download
-            className="mt-2 w-fit lg:hidden"
+            className={buttonClassName("primary", "mt-2 w-fit lg:hidden")}
           >
-            Download my resume
-          </ButtonLink>
+            {t("downloadResume")}
+          </a>
         </motion.div>
       </div>
     </section>

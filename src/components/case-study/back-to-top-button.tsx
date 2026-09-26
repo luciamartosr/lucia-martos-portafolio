@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowUp } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { FadeUp } from "./fade-up";
 
 export function BackToTopButton({
@@ -12,6 +13,7 @@ export function BackToTopButton({
   accentColor: string;
   className?: string;
 }) {
+  const t = useTranslations("caseStudyShared");
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -38,7 +40,7 @@ export function BackToTopButton({
           >
             <ArrowUp className="h-4 w-4" />
           </motion.span>
-          Back to top
+          {t("backToTop")}
         </button>
       </FadeUp>
     </section>

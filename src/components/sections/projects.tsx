@@ -2,9 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useInView } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { TiltText } from "@/components/ui/tilt-text";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -23,9 +24,6 @@ const CARD_ENTRANCE = {
 const OVERLAY_CLASSNAME =
   "absolute inset-0 bg-gradient-to-t from-green-dark via-green/60 to-green/20";
 
-const FEATURED_TAGS = ["Complex Workflows", "UX/UI Design", "Design System"];
-const SECONDARY_TAGS = ["Product Strategy", "UX Research", "UX/UI Design"];
-
 function TagRow({ tags, className }: { tags: string[]; className?: string }) {
   return (
     <div className={`flex flex-wrap items-center gap-2 font-sans ${className ?? ""}`}>
@@ -40,9 +38,11 @@ function TagRow({ tags, className }: { tags: string[]; className?: string }) {
 }
 
 function CaseStudyLink({
+  label,
   hovered,
   className,
 }: {
+  label: string;
   hovered: boolean;
   className?: string;
 }) {
@@ -50,7 +50,7 @@ function CaseStudyLink({
     <span
       className={`inline-flex w-fit items-center gap-1 font-sans font-semibold text-pink ${className ?? ""}`}
     >
-      Read case study
+      {label}
       <motion.span
         className="inline-flex"
         animate={{ x: hovered ? 5 : 0 }}
@@ -62,8 +62,9 @@ function CaseStudyLink({
   );
 }
 
-function FeaturedProjectCard() {
+function FeaturedProjectCard({ t }: { t: ReturnType<typeof useTranslations> }) {
   const [hovered, setHovered] = useState(false);
+  const tags = t.raw("featured.tags") as string[];
 
   return (
     <MotionLink
@@ -83,7 +84,7 @@ function FeaturedProjectCard() {
       >
         <Image
           src="/images/project-shortcat.png"
-          alt="Shortcat — construction industry ERP platform"
+          alt={t("featured.imageAlt")}
           fill
           className="object-cover"
           sizes="(min-width: 1024px) 66vw, 100vw"
@@ -101,7 +102,7 @@ function FeaturedProjectCard() {
         transition={{ duration: 0.3, ease: HOVER_EASE }}
       >
         <span className="font-semibold text-pink">01/</span>
-        FEATURED PROJECT
+        {t("featuredEyebrow")}
       </motion.div>
 
       <div className="relative z-10 flex flex-col gap-4">
@@ -113,13 +114,13 @@ function FeaturedProjectCard() {
             transition={{ duration: 0.35, ease: HOVER_EASE }}
           >
             <h3 className="font-display text-4xl font-bold leading-[1.05] text-cream md:text-5xl">
-              Construction Industry ERP Platform
+              {t("featured.title")}
             </h3>
             <span className="h-1 w-10 rounded-full bg-pink" />
             <p className="font-display text-xl font-semibold text-cream">
-              Shortcat
+              {t("featured.name")}
             </p>
-            <TagRow tags={FEATURED_TAGS} className="text-cream" />
+            <TagRow tags={tags} className="text-cream" />
           </motion.div>
 
           <motion.p
@@ -129,18 +130,19 @@ function FeaturedProjectCard() {
             animate={{ opacity: hovered ? 1 : 0, y: hovered ? 0 : -8 }}
             transition={{ duration: 0.35, ease: HOVER_EASE }}
           >
-            Designed an ERP that simplifies complex construction operations.
+            {t("featured.hoverDescription")}
           </motion.p>
         </div>
 
-        <CaseStudyLink hovered={hovered} />
+        <CaseStudyLink label={t("readCaseStudy")} hovered={hovered} />
       </div>
     </MotionLink>
   );
 }
 
-function SecondaryProjectCard() {
+function SecondaryProjectCard({ t }: { t: ReturnType<typeof useTranslations> }) {
   const [hovered, setHovered] = useState(false);
+  const tags = t.raw("secondary.tags") as string[];
 
   return (
     <MotionLink
@@ -161,7 +163,7 @@ function SecondaryProjectCard() {
         >
           <Image
             src="/images/project-jobmatch.png"
-            alt="JobMatch project"
+            alt={t("secondary.imageAlt")}
             fill
             className="object-cover object-center"
             sizes="(min-width: 1024px) 33vw, 100vw"
@@ -189,13 +191,13 @@ function SecondaryProjectCard() {
             transition={{ duration: 0.35, ease: HOVER_EASE }}
           >
             <h3 className="font-display text-2xl font-bold leading-[1.05] text-green md:text-3xl">
-              Recruitment Platform
+              {t("secondary.title")}
             </h3>
             <span className="h-1 w-10 rounded-full bg-pink" />
             <p className="font-display text-xl font-semibold text-green">
-              JobMatch
+              {t("secondary.name")}
             </p>
-            <TagRow tags={SECONDARY_TAGS} className="text-green" />
+            <TagRow tags={tags} className="text-green" />
           </motion.div>
 
           <motion.p
@@ -205,18 +207,18 @@ function SecondaryProjectCard() {
             animate={{ opacity: hovered ? 1 : 0, y: hovered ? 0 : -8 }}
             transition={{ duration: 0.35, ease: HOVER_EASE }}
           >
-            Connecting companies, recruiters and talent through one seamless
-            experience.
+            {t("secondary.hoverDescription")}
           </motion.p>
         </div>
 
-        <CaseStudyLink hovered={hovered} className="mt-auto" />
+        <CaseStudyLink label={t("readCaseStudy")} hovered={hovered} className="mt-auto" />
       </div>
     </MotionLink>
   );
 }
 
 export function Projects() {
+  const t = useTranslations("projects");
   const headingRef = useRef<HTMLHeadingElement>(null);
   const isHeadingInView = useInView(headingRef, { once: true, amount: 0.7 });
   const [tiltActive, setTiltActive] = useState(false);
@@ -242,7 +244,7 @@ export function Projects() {
             className="font-display text-4xl font-bold text-pink lg:text-5xl"
           >
             <TiltText
-              text="Projects"
+              text={t("heading")}
               activeColor="#02584B"
               restColor="#FF3D9B"
               isActive={tiltActive}
@@ -251,8 +253,8 @@ export function Projects() {
         </motion.div>
 
         <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-[2fr_1fr]">
-          <FeaturedProjectCard />
-          <SecondaryProjectCard />
+          <FeaturedProjectCard t={t} />
+          <SecondaryProjectCard t={t} />
         </div>
 
         <motion.div
@@ -262,17 +264,14 @@ export function Projects() {
           transition={{ duration: 0.6, ease: EASE }}
           className="mt-12 flex flex-col items-center gap-3 text-center"
         >
-          <p className="font-sans text-lg text-green">
-            Looking for more? A few earlier projects are still on my Behance
-            portfolio — I&apos;m bringing my favorites over here soon.
-          </p>
+          <p className="font-sans text-lg text-green">{t("moreProjectsText")}</p>
           <a
             href="https://www.behance.net/luciamartos"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 font-sans font-semibold text-pink"
           >
-            View more on Behance
+            {t("viewMoreOnBehance")}
             <ArrowUpRight className="h-4 w-4" />
           </a>
         </motion.div>
