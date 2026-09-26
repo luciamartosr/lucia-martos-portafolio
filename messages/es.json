@@ -17,9 +17,9 @@
     "eyebrowRole": "DISEÑADORA UX UI",
     "eyebrowConsultant": "CONSULTORA EMPRESARIAL",
     "heading": "Soy Lucía Martos",
-    "paragraph": "14 años como consultora en distintas industrias. Ahora aplico eso al diseño UX/UI — para que tu producto funcione tanto para los usuarios como para la operación detrás de él.",
+    "paragraph": "14 años de experiencia en negocios y consultoría. Hoy diseño productos UX/UI que funcionan para las personas y para el negocio que hay detrás.",
     "ctaContact": "Contáctame",
-    "ctaProjects": "Ver mi trabajo",
+    "ctaProjects": "Ver proyectos",
     "imageAlt": "Lucía Martos sentada junto a las letras 3D UX/UI"
   },
   "about": {
@@ -30,10 +30,10 @@
     "shortParagraph": "Antes de abrir Figma por primera vez, ya hacía lo que hacen los diseñadores de producto: hablar con personas reales, entender sus problemas e iterar rápido. Solo que no sabía que eso tenía nombre. Soy becaria Fulbright con una maestría en Ciencias del Emprendimiento de la Universidad de Florida. Tengo 14 años de experiencia como consultora empresarial y 4 años diseñando productos digitales. Asesoro startups en etapa temprana, he ganado un programa de Design Thinking patrocinado por IDEO, y construyo productos que funcionan tan bien por dentro como se ven por fuera.",
     "expandedParagraphs": [
       "Antes de abrir Figma por primera vez, ya hacía lo que hacen los diseñadores de producto: salir a hablar con personas reales, entender sus problemas y volver a iterar. Solo que no sabía que eso tenía nombre.",
-      "Soy diseñadora UX/UI peruana radicada en Colombia. Estudié administración de empresas y luego me convertí en becaria Fulbright, completando una maestría en Ciencias del Emprendimiento en la Universidad de Florida. Ahí participé en Startup Gainesville — un programa de 48 horas donde mi equipo presentó su propuesta y ganó — y en un programa de design thinking patrocinado por IDEO, donde mi equipo resolvió un reto real para una organización sin fines de lucro. Ambas experiencias definieron cómo pienso los problemas: desde el usuario hacia afuera, no desde la solución hacia adentro.",
+      "Soy diseñadora UX/UI peruana radicada en Colombia. Estudié administración de empresas. Soy becaria Fulbright, completando una maestría en Ciencias del Emprendimiento en la Universidad de Florida, Estados Unidos. Ahí participé en Startup Gainesville — un programa de ideación y validación rápida, con una duración de 48 horas, donde mi equipo presentó la propuesta \"Ecogen\", un generador de energía a partir de bacterias, el cual obtuvo el primer lugar — y en \"Jumpstart by Design Thinking\", un programa patrocinado por el centro de innovación de la Universidad de Florida, cuya edición contó con la participación de uno de los CEO de IDEO, la organización que popularizó el Design Thinking, donde nuevamente mi equipo resolvió un reto real para una organización sin fines de lucro durante 8 semanas, obteniendo otra vez el primer lugar. Ambas experiencias definieron mi manera de pensar alrededor de los problemas: pensando primero en el usuario y luego en la solución.",
       "Durante más de 14 años trabajé como consultora empresarial en distintas industrias — implementando sistemas de gestión de calidad, optimizando procesos, capacitando equipos. Desde 2023 asesoro a emprendedores en etapa temprana en Cajamarca Incuba, la incubadora de negocios de la Cámara de Comercio y Producción de Cajamarca (Perú), ayudándolos a validar ideas, fortalecer sus propuestas de valor y postular a fondos de capital para startups. Uno de los equipos que asesoré ganó un fondo de Startup Perú.",
-      "Hace cuatro años descubrí el diseño UX/UI — y todo por fin tuvo sentido. Finalmente tenía las herramientas para construir lo que llevaba años ayudando a otros a imaginar.",
-      "Si estás construyendo un producto que necesita funcionar tan bien por dentro como se ve por fuera, hablemos."
+      "Hace cuatro años descubrí el diseño UX/UI — y por fin todo tuvo sentido. Finalmente tenía las herramientas para construir lo que llevaba años ayudando a otros a imaginar.",
+      "Si deseas construir un producto digital o tienes una startup que necesite funcionar tan bien por dentro como por fuera, escríbeme."
     ]
   },
   "howCanIHelp": {
@@ -42,32 +42,32 @@
       {
         "number": "01",
         "title": "Diseño de experiencia de usuario",
-        "description": "Mapeo a tus usuarios, tus procesos y los puntos de fricción entre ambos — luego diseño flujos que tienen sentido para las dos partes."
+        "description": "Entiendo a tus usuarios, tus procesos y los puntos donde ambos encuentran fricción. A partir de ahí, diseño experiencias y flujos que funcionan para las personas y para el negocio."
       },
       {
         "number": "02",
         "title": "Arquitectura de información",
-        "description": "Estructuro productos complejos para que los usuarios siempre sepan dónde están y qué hacer a continuación. Especialmente útil para plataformas con múltiples roles y flujos de trabajo"
+        "description": "Organizo productos complejos para que los usuarios encuentren lo que necesitan, entiendan dónde están y sepan qué hacer a continuación. Especialmente en plataformas con múltiples roles y flujos de trabajo."
       },
       {
         "number": "03",
         "title": "Prototipado interactivo",
-        "description": "De baja a alta fidelidad — prototipos diseñados para probar hipótesis temprano y comunicar decisiones con claridad a tu equipo."
+        "description": "Transformo ideas en prototipos de baja a alta fidelidad para probar hipótesis, detectar problemas temprano y comunicar decisiones con claridad antes de desarrollar."
       },
       {
         "number": "04",
         "title": "Pruebas de usabilidad",
-        "description": "Diseño y ejecuto pruebas con usuarios reales para validar qué funciona y detectar qué no, antes de que empiece el desarrollo."
+        "description": "Diseño y realizo pruebas con usuarios reales para entender qué funciona, detectar problemas y tomar decisiones de diseño basadas en evidencia antes de pasar a desarrollo."
       },
       {
         "number": "05",
         "title": "Auditoría UX",
-        "description": "Una revisión exhaustiva de tu producto actual para identificar problemas de usabilidad, vacíos en los flujos y oportunidades para mejorar la experiencia."
+        "description": "Analizo tu producto actual para identificar problemas de usabilidad, fricciones, inconsistencias y oportunidades de mejora a lo largo de la experiencia."
       },
       {
         "number": "06",
         "title": "Documentación de producto y diseño",
-        "description": "Anotaciones claras, documentación de flujos y reglas de diseño para que tu equipo de desarrollo siempre entienda la intención detrás de cada pantalla."
+        "description": "Documento flujos, comportamientos y reglas de diseño para que desarrollo entienda no solo qué construir, sino también la intención detrás de cada decisión."
       }
     ]
   },
@@ -76,7 +76,7 @@
     "featuredEyebrow": "PROYECTO DESTACADO",
     "featured": {
       "imageAlt": "Shortcat — plataforma ERP para la industria de la construcción",
-      "title": "Plataforma ERP para la industria de la construcción",
+      "title": "ERP para la industria de la construcción",
       "name": "Shortcat",
       "tags": ["Flujos complejos", "Diseño UX/UI", "Sistema de diseño"],
       "hoverDescription": "Diseñé un ERP que simplifica operaciones complejas de construcción."
@@ -88,20 +88,20 @@
       "tags": ["Estrategia de producto", "Investigación UX", "Diseño UX/UI"],
       "hoverDescription": "Conectando empresas, reclutadores y talento a través de una experiencia fluida."
     },
-    "readCaseStudy": "Ver caso de estudio",
-    "moreProjectsText": "¿Buscas más? Algunos proyectos anteriores siguen en mi portafolio de Behance — pronto traeré mis favoritos aquí.",
+    "readCaseStudy": "Ver proyecto",
+    "moreProjectsText": "¿Quieres ver más? Algunos de mis proyectos anteriores están disponibles en Behance. Pronto compartiré aquí algunos de mis favoritos.",
     "viewMoreOnBehance": "Ver más en Behance"
   },
   "footer": {
     "logoAlt": "Lucía Martos",
     "role": "Diseñadora UX/UI",
     "consultant": "Consultora empresarial",
-    "basedIn": "Con base en Colombia, trabajando globalmente.",
+    "basedIn": "Peruana, basada en Colombia trabajando globalmente.",
     "headingLine1": "Construyamos algo",
     "headingLine2": "que funcione.",
     "emailMe": "Escríbeme",
     "emailCopied": "Correo copiado al portapapeles",
-    "whatsappMe": "Escríbeme por WhatsApp",
+    "whatsappMe": "Hablemos por Whatsapp",
     "links": {
       "home": "Inicio",
       "about": "Sobre mí",
