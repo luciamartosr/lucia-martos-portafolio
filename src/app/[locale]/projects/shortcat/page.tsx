@@ -16,6 +16,7 @@ import { LightboxVideo } from "@/components/case-study/lightbox-video";
 const ACCENT = "#F5B800";
 const ACCENT_DARK = "#B8860B";
 const STAT_ICONS = [User, Clock, CheckCircle2, MapPin];
+const rich = { b: (chunks: React.ReactNode) => <strong>{chunks}</strong> };
 
 export async function generateMetadata({
   params,
@@ -89,7 +90,11 @@ export default async function ShortcatCaseStudy({
 
         <CaseSection title={t("whatIDesigned.title")} accentColor={ACCENT}>
           <LightboxImage
-            src="/images/shortcat-ecosystem-map.png"
+            src={
+              locale === "es"
+                ? "/images/shortcat-ecosystem-map-es.png"
+                : "/images/shortcat-ecosystem-map.png"
+            }
             alt={t("whatIDesigned.ecosystemImage.alt")}
             caption={t("whatIDesigned.ecosystemImage.caption")}
             width={1600}
@@ -110,6 +115,7 @@ export default async function ShortcatCaseStudy({
             {t("whatIDesigned.coreFlow.keyDecision")}
           </KeyDecision>
           <p>{t("whatIDesigned.coreFlow.p3")}</p>
+          <p>{t("whatIDesigned.coreFlow.p4")}</p>
 
           <LightboxImage
             src="/images/shortcat-comparison-table.gif"
@@ -125,8 +131,8 @@ export default async function ShortcatCaseStudy({
           >
             {t("whatIDesigned.collaborative.heading")}
           </h3>
-          <p>{t("whatIDesigned.collaborative.p1")}</p>
-          <p>{t("whatIDesigned.collaborative.p2")}</p>
+          <p>{t.rich("whatIDesigned.collaborative.p1", rich)}</p>
+          <p>{t.rich("whatIDesigned.collaborative.p2", rich)}</p>
           <p>{t("whatIDesigned.collaborative.p3")}</p>
           <KeyDecision accentColor={ACCENT} label={tShared("keyDecisionDefaultLabel")}>
             {t("whatIDesigned.collaborative.keyDecision")}
@@ -142,10 +148,13 @@ export default async function ShortcatCaseStudy({
           >
             {t("whatIDesigned.projectsCost.heading")}
           </h3>
-          <p>{t("whatIDesigned.projectsCost.p1")}</p>
+          <p>{t.rich("whatIDesigned.projectsCost.p1", rich)}</p>
           <KeyDecision accentColor={ACCENT} label={tShared("keyDecisionDefaultLabel")}>
             {t("whatIDesigned.projectsCost.keyDecision")}
           </KeyDecision>
+          {t.has("whatIDesigned.projectsCost.p2") && (
+            <p>{t("whatIDesigned.projectsCost.p2")}</p>
+          )}
 
           <LightboxVideo
             src="/images/shortcat-projects-cost-management.mp4"
@@ -160,6 +169,14 @@ export default async function ShortcatCaseStudy({
             {t("whatIDesigned.additionalModules.heading")}
           </h3>
           <p>{t("whatIDesigned.additionalModules.p1")}</p>
+          {(["marketplace", "academy", "premium"] as const).map(
+            (key) =>
+              t.has(`whatIDesigned.additionalModules.${key}`) && (
+                <p key={key}>
+                  {t.rich(`whatIDesigned.additionalModules.${key}`, rich)}
+                </p>
+              ),
+          )}
         </CaseSection>
 
         <CaseSection title={t("whyDifferent.title")} accentColor={ACCENT}>
@@ -169,6 +186,7 @@ export default async function ShortcatCaseStudy({
 
         <CaseSection title={t("whatILearned.title")} accentColor={ACCENT}>
           <p>{t("whatILearned.p1")}</p>
+          {t.has("whatILearned.p2") && <p>{t("whatILearned.p2")}</p>}
           <p className="font-display text-xl font-semibold text-ink">
             {t("whatILearned.highlight")}
           </p>

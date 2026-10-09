@@ -115,7 +115,7 @@
     "backToProjects": "Regresar a proyectos",
     "backToTop": "Volver arriba",
     "keyDecisionDefaultLabel": "Decisión clave de producto:",
-    "disclaimerHeading": "Una nota sobre este caso de estudio",
+    "disclaimerHeading": "Una nota sobre este proyecto",
     "viewInFullScreen": "Ver {alt} en pantalla completa",
     "viewFullScreen": "Ver en pantalla completa",
     "zoomIn": "Acercar",
@@ -129,8 +129,8 @@
   },
   "caseStudyShortcat": {
     "meta": {
-      "title": "Shortcat — Caso de estudio | Lucía Martos",
-      "description": "ERP para la gestión de compras en el sector construcción. Un caso de estudio de Lucía Martos, Lead Product Designer."
+      "title": "Shortcat — Proyecto | Lucía Martos",
+      "description": "ERP para la gestión de compras en el sector construcción. Un proyecto de Lucía Martos, Lead Product Designer."
     },
     "hero": {
       "eyebrow": "Proyecto",
@@ -147,10 +147,10 @@
     ],
     "hook": "Un brief inicial, documentación incompleta y flujos que seguían cambiando durante la ejecución. Este es el producto que lideré durante 13 meses — y que hoy está en producción.",
     "context": {
-      "title": "El contexto",
-      "p1": "El sector construcción funciona a base de compras. Cada proyecto depende de conseguir los materiales correctos, de los proveedores correctos, al precio correcto — y a tiempo. La mayoría de empresas todavía gestiona esto con hojas de cálculo, correos y WhatsApp.",
-      "p2": "Shortcat nació para cambiar eso — no solo digitalizando el proceso, sino reimaginándolo: convirtiendo decisiones de compra individuales en poder de compra colectivo.",
-      "calloutP": "Me uní como diseñadora líder con una visión de alto nivel ya documentada. Los flujos necesitaron ajustes desde el primer día — y siguieron evolucionando durante todo el proceso de diseño. Mi rol no era solo diseñar pantallas — era facilitar las conversaciones que convirtieron ideas de negocio en flujos documentados, y flujos documentados en un producto real."
+      "title": "Contexto",
+      "p1": "El sector construcción depende de la gestión de compras. Cada proyecto necesita los materiales adecuados, de los proveedores indicados, al mejor precio y en el momento oportuno. Sin embargo, muchas empresas todavía gestionan estos procesos con hojas de cálculo, correos electrónicos y WhatsApp.",
+      "p2": "Shortcat nació para cambiar esta realidad. No se trataba solo de digitalizar el proceso de compras, sino de replantearlo por completo: transformar las decisiones de compra individuales en una oportunidad para negociar y comprar en conjunto, aprovechando el poder de compra colectivo.",
+      "calloutP": "Me incorporé como diseñadora líder cuando la visión general del producto ya estaba definida y documentada. Sin embargo, desde el inicio fue necesario ajustar los flujos, que continuaron evolucionando a lo largo del proceso de diseño. Mi rol iba más allá de diseñar pantallas: facilité conversaciones entre negocio y desarrollo para transformar las ideas iniciales en flujos claros y documentados, y llevarlos desde la definición funcional hasta un producto digital real."
     },
     "whatIDesigned": {
       "title": "Lo que diseñé",
@@ -161,51 +161,57 @@
       "intro": "Construí un ERP con seis sistemas interconectados que cubren todo el ciclo de gestión de compras, enfocado principalmente en el sector construcción — con una arquitectura diseñada para expandirse a otros sectores en el futuro.",
       "coreFlow": {
         "heading": "Flujo central de compras",
-        "p1": "Desde la creación del requerimiento hasta el cierre con evaluación bidireccional. El flujo soporta aprobaciones condicionales configurables — porque Shortcat atiende tanto a empresas donde el gerente general aprueba solo, como a empresas con múltiples niveles jerárquicos.",
-        "p2": "El componente más complejo fue la tabla comparativa — una grilla donde el comprador evalúa cotizaciones de múltiples proveedores por ítem y las adjudica de forma granular. Antes de diseñar una sola pantalla, me reuní con usuarios de logística y compras de distintas empresas para entender cómo evalúan cotizaciones en la práctica: qué criterios importan más, en qué orden deciden, y cómo piensan cuando diez proveedores cotizan diez ítems cada uno.",
-        "keyDecision": "Mostrar visualmente cuál es la mejor propuesta por ítem sin forzar la elección — porque en compras reales, el precio no siempre es el único criterio. Esa decisión surgió de entender la lógica del negocio, no de una especificación.",
-        "p3": "El flujo cierra con Shortcat Drive — gestión documental por orden de compra directamente en la plataforma, eliminando el caos de los correos — y una evaluación bidireccional donde compradores y proveedores se califican mutuamente. Incluí la calificación del comprador porque en construcción, saber si un cliente paga tarde o cambia condiciones a último momento es tan valioso como evaluar a un proveedor."
+        "p1": "El flujo abarca desde la creación del requerimiento hasta el cierre de la orden de compra y la evaluación bidireccional. Incluye aprobaciones condicionales configurables para adaptarse a distintas estructuras organizacionales: desde empresas donde basta la aprobación del gerente general hasta aquellas que requieren varios niveles de autorización.",
+        "p2": "Uno de los mayores retos fue diseñar la tabla comparativa: una grilla en la que el comprador evalúa las cotizaciones de múltiples proveedores por ítem y puede adjudicar cantidades de forma granular. Antes de diseñar las pantallas, me reuní con usuarios de logística y compras de distintas empresas para comprender cómo evalúan las propuestas en la práctica: qué criterios priorizan, cómo toman decisiones y qué necesitan para comparar múltiples proveedores y productos de manera eficiente.",
+        "keyDecision": "destacar visualmente la propuesta más conveniente para cada ítem sin imponer su elección. En los procesos de compra, el precio no siempre es el único criterio determinante. Esta decisión surgió de comprender la lógica del negocio y las necesidades de los usuarios, más allá de lo establecido en los requerimientos iniciales.",
+        "p3": "El flujo se completa con Shortcat Drive, que centraliza la documentación de cada orden de compra dentro de la plataforma y reduce la dependencia de los correos electrónicos. También incorpora una evaluación bidireccional entre compradores y proveedores.",
+        "p4": "Incluí la calificación del comprador porque, en el sector construcción, la confianza comercial funciona en ambas direcciones. Para un proveedor, conocer si un cliente cumple con los pagos o modifica las condiciones acordadas a último momento puede ser tan importante como para un comprador evaluar a sus proveedores."
       },
       "comparisonImage": {
         "alt": "Tabla comparativa y flujo de adjudicación de Shortcat",
         "caption": "Tabla comparativa y adjudicación"
       },
       "collaborative": {
-        "heading": "Compra colaborativa — el mayor diferenciador",
-        "p1": "Compra grupal: varias empresas juntan volumen para negociar mejores precios en conjunto.",
-        "p2": "Subasta inversa: Shortcat identifica los productos más demandados en la plataforma y lanza una subasta donde el precio baja a medida que se suman más compradores.",
-        "p3": "Ambas funcionalidades tenían pantallas anteriores construidas sobre una lógica de negocio incompleta. Las reconstruí desde la lógica hacia arriba, a través de múltiples sesiones con el cliente.",
-        "keyDecision": "En la compra grupal, definir cuánta visibilidad tiene cada empresa sobre las demás. Demasiada información rompía la confianza entre competidores; muy poca hacía imposible coordinar la compra. Encontrar ese equilibrio tomó varias iteraciones y fue una decisión de producto, no de interfaz."
+        "heading": "Compra colaborativa: el mayor diferenciador",
+        "p1": "<b>Compra conjunta:</b> permite que varias empresas unan sus volúmenes de compra para negociar mejores precios en conjunto.",
+        "p2": "<b>Subasta inversa:</b> Shortcat identifica los productos con mayor demanda dentro de la plataforma y organiza subastas en las que los proveedores pueden reducir sus precios a medida que se incorporan más compradores.",
+        "p3": "Ambas funcionalidades ya contaban con diseños previos, pero partían de una lógica de negocio incompleta. Mi trabajo consistió en replantearlas desde sus fundamentos funcionales, mediante varias sesiones de trabajo con el cliente para aclarar las reglas del negocio y definir cómo debían funcionar.",
+        "keyDecision": "definir qué información de las empresas participantes debía ser visible para las demás en una compra conjunta. Mostrar demasiados datos podía comprometer la confianza entre empresas competidoras; mostrar muy pocos dificultaba la coordinación. Encontrar el equilibrio entre transparencia y confidencialidad requirió varias iteraciones y decisiones que iban más allá de la interfaz."
       },
-      "learnMore": "¿Quieres ver estos flujos en detalle? Con gusto te muestro las pantallas de compra grupal y subasta inversa en una entrevista — hablemos.",
+      "learnMore": "Si deseas saber un poco más de estos flujos, con gusto lo podemos discutir en una entrevista.",
       "projectsCost": {
         "heading": "Proyectos y gestión de costos",
-        "p1": "Lo que empezó como un campo de \"centro de costos\" dentro de Configuración evolucionó en un módulo completo: presupuestos por partida y subpartida, gestión de órdenes de cambio, seguimiento de costos vinculado a cada partida, y un dashboard de ejecución en tiempo real.",
-        "keyDecision": "Separar \"Proyectos\" de \"Gestión de costos\" en dos secciones distintas en vez de una sola. Proyectos es donde defines y planificas — costos es donde controlas y ejecutas. Fusionarlos en una sola pantalla generaba confusión sobre qué acción estaba realizando el usuario en cada momento.",
+        "p1": "Lo que comenzó como un campo de «centro de costos» dentro de Configuración evolucionó hasta convertirse en dos áreas funcionales: un módulo de <b>Proyectos</b>, con presupuestos organizados por partidas y subpartidas, y otro de <b>Gestión de costos</b>, con seguimiento de costos por partida, gestión de órdenes de cambio y un dashboard para monitorear la ejecución presupuestaria.",
+        "keyDecision": "separar «Proyectos» y «Gestión de costos» en dos secciones distintas. Aunque están estrechamente relacionadas, responden a objetivos diferentes: en Proyectos, el usuario define y planifica el presupuesto; en Gestión de costos, monitorea y controla su ejecución.",
+        "p2": "Mantener ambas áreas separadas ayudaba a distinguir las tareas de planificación de las de seguimiento y control, evitando mezclar acciones con objetivos distintos en una misma pantalla.",
         "videoCaption": "Módulo de proyectos y dashboard de costos."
       },
       "additionalModules": {
         "heading": "Módulos adicionales diseñados",
-        "p1": "Tres módulos diseñados y en cola para desarrollo: un marketplace de requerimientos rediseñado, Shortcat Academy (videos tutoriales y plantillas descargables con un panel de administración), y planes de suscripción premium con lógica de activación basada en webhooks y un panel de gestión de suscriptores."
+        "p1": "Además del flujo principal, diseñé tres módulos que quedaron pendientes de desarrollo:",
+        "marketplace": "<b>Marketplace de requerimientos:</b> rediseño de la experiencia para facilitar la exploración de requerimientos publicados en la plataforma.",
+        "academy": "<b>Shortcat Academy:</b> espacio de aprendizaje con videos tutoriales y plantillas descargables, junto con un panel de administración para gestionar sus contenidos.",
+        "premium": "<b>Planes de suscripción premium:</b> diseño de los planes y de la experiencia de activación, contemplando una lógica de integración mediante webhooks y un panel para gestionar suscriptores."
       }
     },
     "whyDifferent": {
       "title": "Por qué este proyecto es diferente",
-      "p1": "No ejecutaba briefs — ayudaba a escribirlos. Los flujos más complejos no tenían una especificación clara. Facilité las sesiones, mapeé a los stakeholders, definí la lógica, y solo entonces diseñé.",
-      "p2": "Mis 14 años como consultora empresarial me permiten leer la lógica operativa detrás de cada requerimiento antes de abrir Figma. Por eso pude diseñar una evaluación bidireccional, una subasta inversa, o un sistema de control presupuestal por partida — no porque me lo entregaron en un documento, sino porque entiendo cómo funcionan realmente estas cosas dentro de empresas reales."
+      "p1": "No me limitaba a ejecutar briefs: también ayudaba a construirlos. Los flujos más complejos no siempre contaban con una especificación funcional clara. Mi trabajo consistía en facilitar sesiones con el cliente, identificar a los stakeholders involucrados, definir la lógica del proceso y documentar los flujos antes de pasar al diseño.",
+      "p2": "Mis 14 años de experiencia como consultora empresarial me permiten comprender la lógica operativa detrás de cada requerimiento antes de abrir Figma. Esa experiencia fue clave para diseñar funcionalidades como la evaluación bidireccional, la subasta inversa y el control presupuestario por partidas. No partía únicamente de lo descrito en un documento: aportaba mi conocimiento de cómo funcionan estos procesos en las empresas para ayudar a convertir necesidades de negocio en soluciones digitales concretas."
     },
     "whatILearned": {
       "title": "Lo que aprendí",
-      "p1": "Avanzar sin validar con usuarios reales no es progreso — es una suposición. La fricción post-lanzamiento en el flujo central confirmó lo que había señalado desde el inicio. Esa experiencia definió cómo abordo las decisiones de producto ahora: defender al usuario con argumentos, documentar el razonamiento, e insistir en la validación temprana incluso bajo presión de startup.",
-      "highlight": "Un producto no termina cuando se lanza. Termina cuando funciona bien para quien lo usa.",
+      "p1": "Avanzar sin validar con usuarios reales no es necesariamente progreso: puede ser avanzar sobre suposiciones. La fricción que surgió en el flujo principal después del lanzamiento reforzó la importancia de una preocupación que había señalado desde el inicio: la necesidad de validar las decisiones de diseño antes de llevarlas a producción.",
+      "p2": "Esta experiencia reforzó mi forma de abordar las decisiones de producto: defender las necesidades del usuario con argumentos, documentar el razonamiento detrás de cada decisión y promover la validación temprana, incluso bajo la presión de un entorno startup.",
+      "highlight": "Un producto no está terminado cuando se lanza, sino cuando funciona bien para las personas que lo utilizan.",
       "liveProductPrefix": "Puedes explorar el producto en vivo en",
       "liveProductLabel": "clientes.shortcat.ai"
     }
   },
   "caseStudyJobmatch": {
     "meta": {
-      "title": "JobMatch — Caso de estudio | Lucía Martos",
-      "description": "Diseñando una plataforma de empleo para tres tipos de usuario — sin convertirla en tres productos distintos. Un caso de estudio de Lucía Martos, UX/UI Designer."
+      "title": "JobMatch — Proyecto | Lucía Martos",
+      "description": "Diseñando una plataforma de empleo para tres tipos de usuario — sin convertirla en tres productos distintos. Un proyecto de Lucía Martos, UX/UI Designer."
     },
     "hero": {
       "eyebrow": "Proyecto",
@@ -226,7 +232,7 @@
       "p1": "Encontrar talento sigue siendo un proceso complejo para todos los involucrados — y hay más de dos lados en esta historia.",
       "p2": "Jobmatch se construyó para conectar tres perfiles con necesidades distintas: empresas que buscan optimizar su proceso de contratación, candidatos que buscan oportunidades más rápidas y transparentes, y reclutadores independientes que gestionan múltiples procesos a la vez.",
       "p3": "El verdadero reto no era diseñar una plataforma de empleo — era diseñar un solo ecosistema que sirviera a los tres sin agregar complejidad ni sacrificar la experiencia de nadie.",
-      "disclaimer": "Este caso de estudio refleja el producto y los flujos diseñados durante mi participación en el proyecto. Algunas interfaces y flujos de usuario pueden haber evolucionado o sido modificados durante el desarrollo posterior a mi participación."
+      "disclaimer": "Este proyecto refleja el producto y los flujos diseñados durante mi participación. Algunas interfaces y flujos de usuario pueden haber evolucionado o sido modificados durante el desarrollo posterior a mi participación."
     },
     "valueProposition": {
       "title": "La propuesta de valor",

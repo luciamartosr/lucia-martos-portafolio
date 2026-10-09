@@ -115,7 +115,7 @@
     "backToProjects": "Back to projects",
     "backToTop": "Back to top",
     "keyDecisionDefaultLabel": "Key product decision:",
-    "disclaimerHeading": "A note on the case study",
+    "disclaimerHeading": "A note on the project",
     "viewInFullScreen": "View {alt} in full screen",
     "viewFullScreen": "View full screen",
     "zoomIn": "Zoom in",
@@ -129,8 +129,8 @@
   },
   "caseStudyShortcat": {
     "meta": {
-      "title": "Shortcat — Case Study | Lucía Martos",
-      "description": "ERP for procurement management in the construction sector. A case study by Lucía Martos, Lead Product Designer."
+      "title": "Shortcat — Project | Lucía Martos",
+      "description": "ERP for procurement management in the construction sector. A project by Lucía Martos, Lead Product Designer."
     },
     "hero": {
       "eyebrow": "Project",
@@ -164,7 +164,8 @@
         "p1": "From requirement creation to closing with two-way evaluation. The flow supports configurable conditional approvals — because Shortcat serves both companies where the general manager approves alone, and companies with multiple hierarchical levels.",
         "p2": "The most complex component was the comparison table — a grid where the buyer evaluates quotes from multiple suppliers per item and awards them granularly. Before designing a single screen, I met with logistics and procurement users from different companies to understand how they actually evaluate quotes in practice: which criteria matter most, in what order they decide, and how they think when ten suppliers are quoting on ten items each.",
         "keyDecision": "Visually show which is the best proposal per item without forcing the choice — because in real procurement, price isn't always the only criterion. That decision came from understanding the business logic, not from a spec.",
-        "p3": "The flow closes with Shortcat Drive — document management by purchase order directly in the platform, eliminating email chaos — and a two-way evaluation where buyers and suppliers rate each other. I included the buyer's rating because in construction, knowing whether a client pays late or changes terms at the last minute is just as valuable as evaluating a supplier."
+        "p3": "The flow closes with Shortcat Drive — document management by purchase order directly in the platform, eliminating email chaos — and a two-way evaluation where buyers and suppliers rate each other.",
+        "p4": "I included the buyer's rating because in construction, knowing whether a client pays late or changes terms at the last minute is just as valuable as evaluating a supplier."
       },
       "comparisonImage": {
         "alt": "Shortcat comparison table and award flow",
@@ -204,8 +205,8 @@
   },
   "caseStudyJobmatch": {
     "meta": {
-      "title": "JobMatch — Case Study | Lucía Martos",
-      "description": "Designing an employment platform for three user types — without turning it into three different products. A case study by Lucía Martos, UX/UI Designer."
+      "title": "JobMatch — Project | Lucía Martos",
+      "description": "Designing an employment platform for three user types — without turning it into three different products. A project by Lucía Martos, UX/UI Designer."
     },
     "hero": {
       "eyebrow": "Project",
@@ -226,7 +227,7 @@
       "p1": "Finding talent is still a complex process for everyone involved — and there are more than two sides to it.",
       "p2": "Jobmatch was built to connect three profiles with different needs: companies looking to optimize their hiring process, candidates seeking faster and more transparent opportunities, and independent recruiters managing multiple processes at the same time.",
       "p3": "The real challenge wasn't designing a job platform — it was designing a single ecosystem that served all three without adding complexity or sacrificing anyone's experience.",
-      "disclaimer": "This case study reflects the product and flows designed during my involvement in the project. Some interfaces and user flows may have evolved or been modified during development after my participation."
+      "disclaimer": "This project reflects the product and flows designed during my involvement in the project. Some interfaces and user flows may have evolved or been modified during development after my participation."
     },
     "valueProposition": {
       "title": "The value proposition",
