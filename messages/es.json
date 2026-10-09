@@ -112,7 +112,7 @@
     "copyright": "© {year} Lucía Martos. Todos los derechos reservados"
   },
   "caseStudyShared": {
-    "backToProjects": "Volver a proyectos",
+    "backToProjects": "Regresar a proyectos",
     "backToTop": "Volver arriba",
     "keyDecisionDefaultLabel": "Decisión clave de producto:",
     "disclaimerHeading": "Una nota sobre este caso de estudio",
@@ -133,7 +133,7 @@
       "description": "ERP para la gestión de compras en el sector construcción. Un caso de estudio de Lucía Martos, Lead Product Designer."
     },
     "hero": {
-      "eyebrow": "Caso de estudio",
+      "eyebrow": "Proyecto",
       "title": "Shortcat",
       "tagline": "ERP para la gestión de compras en el sector construcción.",
       "tags": ["Flujos complejos", "Diseño UX/UI", "Sistema de diseño"],
@@ -208,7 +208,7 @@
       "description": "Diseñando una plataforma de empleo para tres tipos de usuario — sin convertirla en tres productos distintos. Un caso de estudio de Lucía Martos, UX/UI Designer."
     },
     "hero": {
-      "eyebrow": "Caso de estudio",
+      "eyebrow": "Proyecto",
       "title": "JobMatch",
       "tagline": "Diseñando una plataforma de empleo para tres tipos de usuario — sin convertirla en tres productos distintos.",
       "tags": ["Estrategia de producto", "Investigación UX", "Diseño UX/UI"],
